@@ -119,7 +119,7 @@ export default function BannerTextGeneric(
     <div
       class={`${ layout?.variants?.section === 'Reverse' ? 'bg-[#0A2121]' : 'bg-[#FFF]' } w-full ${layout?.image === 'Backgrond' && 'bannerBackground'} relative z-0`}>
 
-      { layout?.image === 'Backgrond' && banners?.length ? <Image width={180} height={173} src={banners[0]?.desktop} class="w-full h-full object-cover absolute z-[-1]" /> : null}
+      { layout?.image === 'Backgrond' && banners?.length ? <Image width={400} height={380} src={banners[0]?.desktop} class="w-full h-full object-cover absolute z-[-1]" /> : null}
 
       <div class={`xl:container xl:mx-auto mx-5 md:mx-10 ${ALIGNMENT_CONTAINER[layout?.alignment ?? "Column"]} gap-12 md:gap-16 items-center justify-center py-5 md:py-10`}>
         <div />
