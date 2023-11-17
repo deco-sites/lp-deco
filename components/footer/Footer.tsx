@@ -7,6 +7,8 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import PoweredByDeco from "apps/website/components/PoweredByDeco.tsx";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import SocialFooter from "$store/components/footer/SocialFooter.tsx";
+import { AvailableIcons } from "$store/components/ui/Icon.tsx";
+import Newsletter from "$store/islands/Newsletter.tsx";
 
 export type Item = {
   label: string;
@@ -48,7 +50,15 @@ export interface Layout {
     socialFooter?: boolean
     sectionLinks?: boolean;
     extraLinks?: boolean;
+    newsletter?: boolean;
   };
+}
+
+export interface NewsletterForm {
+  placeholder?: string;
+  buttonText?: string;
+  /** @format html */
+  helpText?: string;
 }
 
 
@@ -65,6 +75,12 @@ export interface Props {
   logo?: {
     image: ImageWidget;
     description?: string;
+  };
+  newsletter?: {
+    title?: string;
+    /** @format textarea */
+    description?: string;
+    form?: NewsletterForm;
   };
   sections?: Section[];
   extraLinks?: Item[];
@@ -101,6 +117,11 @@ const Image = (src: string) => {
 
 function Footer({
   logo,
+  newsletter = {
+    title: "Newsletter",
+    description: "",
+    form: { placeholder: "", buttonText: "", helpText: "" },
+  },
   sections = [
     {
       label: "Column One",
@@ -162,11 +183,21 @@ function Footer({
       logo: false,
       sectionLinks: false,
       extraLinks: false,
-      socialFooter: false
+      socialFooter: false,
+      newsletter: false,
     },
   },
 }: Props) {
   const _logo = layout?.hide?.logo ? <></> : <Logo logo={logo} />;
+  const _newsletter = layout?.hide?.newsletter ? <></> : (
+    <Newsletter
+      content={newsletter}
+      layout={{
+        tiled: layout?.variation == "Variation 4" ||
+          layout?.variation == "Variation 5",
+      }}
+    />
+  );
   const _sectionLinks = layout?.hide?.sectionLinks ? <></> : (
     <FooterItems
       sections={sections}
@@ -193,15 +224,11 @@ function Footer({
             <div class="flex flex-col md:flex-row md:justify-between md:flex-wrap lg:flex-nowrap gap-8 lg:gap-12">
               {_logo}
               {_sectionLinks}
-              {_newsletter}
             </div>
             <Divider />
             <div class="flex flex-col md:flex-row gap-10 md:gap-14 md:items-end">
-              {_payments}
-              {_social}
               <div class="flex flex-col lg:flex-row gap-10 lg:gap-14 lg:items-end">
-                {_apps}
-                {_region}
+              {_socialFooter}
               </div>
             </div>
             <Divider />
@@ -217,13 +244,9 @@ function Footer({
             <div class="flex flex-col md:flex-row gap-10">
               <div class="flex flex-col gap-10 lg:w-1/2">
                 {_logo}
-                {_social}
-                {_payments}
-                {_apps}
-                {_region}
+                {_socialFooter}
               </div>
               <div class="flex flex-col gap-10 lg:gap-20 lg:w-1/2 lg:pr-10">
-                {_newsletter}
                 {_sectionLinks}
               </div>
             </div>
@@ -238,19 +261,11 @@ function Footer({
           <div class="flex flex-col gap-10">
             {_logo}
             <div class="flex flex-col lg:flex-row gap-14">
-              <div class="flex flex-col md:flex-row lg:flex-col md:justify-between lg:justify-normal gap-10 lg:w-2/5">
-                {_newsletter}
-                <div class="flex flex-col gap-10">
-                  {_payments}
-                  {_apps}
-                </div>
-              </div>
               <div class="flex flex-col gap-10 lg:gap-20 lg:w-3/5 lg:items-end">
                 <div class="flex flex-col md:flex-row gap-10">
                   {_sectionLinks}
-                  {_social}
                 </div>
-                {_region}
+                {_socialFooter}
               </div>
             </div>
             <Divider />
@@ -262,22 +277,14 @@ function Footer({
         )}
         {layout?.variation == "Variation 4" && (
           <div class="flex flex-col gap-10">
-            {_newsletter}
-            {layout?.hide?.newsletter ? <></> : <Divider />}
             <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 lg:justify-between">
               {_sectionLinks}
               <div class="flex flex-col md:flex-row lg:flex-col gap-10 lg:gap-10 lg:w-2/5 lg:pl-10">
-                <div class="flex flex-col md:flex-row gap-10 lg:gap-20">
-                  <div class="lg:flex-auto">
-                    {_payments}
-                  </div>
-                  <div class="lg:flex-auto">
-                    {_social}
-                  </div>
-                </div>
                 <div class="flex flex-col gap-10 lg:gap-10">
-                  {_region}
-                  {_apps}
+                <div class="flex flex-col md:flex-row gap-10 md:items-center">
+                  {_links}
+                </div>
+                {_socialFooter}
                 </div>
               </div>
             </div>
@@ -290,13 +297,35 @@ function Footer({
         )}
         {layout?.variation == "Variation 5" && (
           <div class="flex flex-col gap-10">
-            {_logo}
+            <div>
+              {_newsletter}
+            </div>
             <div class="flex flex-col md:flex-row gap-10 lg:gap-20 md:justify-between">
+              {_logo}
+              {_sectionLinks}
+            </div>
+            <Divider />
+            <div class="flex flex-col-reverse w-full md:flex-row md:justify-between gap-10 md:items-center">
+              <PoweredByDeco />
+              <div class="flex flex-col md:flex-row gap-10 md:items-center">
+                {_links}
+              </div>
+              {_socialFooter}
+            </div>
+          </div>
+        )}
+        {layout?.variation == "Variation 6" && (
+          <div class="flex flex-col gap-10">
+            <div>
+              {_newsletter}
+            </div>
+            <div class="flex flex-col md:flex-row gap-10 lg:gap-20 md:justify-between">
+              <PoweredByDeco />
               {_sectionLinks}
             </div>
             <Divider />
             <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10 md:items-center">
-              <PoweredByDeco />
+              <p>© 2023 Deco.cx. All rights reserved.</p>
               <div class="flex flex-col md:flex-row gap-10 md:items-center">
                 {_links}
               </div>

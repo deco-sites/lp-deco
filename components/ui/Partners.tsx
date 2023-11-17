@@ -43,7 +43,7 @@ function Partners(props: Props) {
   );
 
   return (
-    <div class="w-full bg-[#0A2121] py-5 md:py-10">
+    <div class="w-full bg-[#FFF] py-5 md:py-10">
       <div class="xl:container xl:mx-auto mx-5 md:mx-10 flex flex-col gap-4 lg:gap-8">
         {title && (
           <p class="text-[#02F67C] text-[40px] font-semibold">{title}</p>
@@ -53,7 +53,7 @@ function Partners(props: Props) {
           <div class="overflow-hidden pt-2">
             {list.map(({ colImages }, index) => (
               <div
-                class={`flex flex-row flex-nowrap w-full animate-walk ${
+                class={`flex flex-row flex-nowrap w-full animate-walk text-white ${
                   index > 0 && index < list.length - 1 ? "py-6" : "py-2"
                 } items-center gap-4`}
                 style={`animation-delay: ${300 * index}ms`}

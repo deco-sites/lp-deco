@@ -5,7 +5,8 @@
 import * as $0 from "./routes/_app.tsx";
 import * as $$0 from "./islands/Drawers.tsx";
 import * as $$1 from "./islands/MenuButton.tsx";
-import * as $$2 from "./islands/SliderJS.tsx";
+import * as $$2 from "./islands/Newsletter.tsx";
+import * as $$3 from "./islands/SliderJS.tsx";
 
 const manifest = {
   routes: {
@@ -14,7 +15,8 @@ const manifest = {
   islands: {
     "./islands/Drawers.tsx": $$0,
     "./islands/MenuButton.tsx": $$1,
-    "./islands/SliderJS.tsx": $$2,
+    "./islands/Newsletter.tsx": $$2,
+    "./islands/SliderJS.tsx": $$3,
   },
   baseUrl: import.meta.url,
 };

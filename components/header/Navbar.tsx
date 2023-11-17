@@ -20,7 +20,7 @@ function Navbar({ items, logo, hrefLogin }: {
           <a
             href="/"
             class="inline-flex items-center"
-            style={{ minHeight: navbarHeight }}
+            style={{ minHeight: '70px' }}
             aria-label="Store logo"
           >
             <img class="h-full w-[120px]" src={logo.src} alt={logo.alt} />
