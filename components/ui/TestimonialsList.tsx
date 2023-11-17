@@ -41,7 +41,7 @@ function Dots({ images, interval = 0 }: Props) {
             <Slider.Dot index={index}>
               <div class="py-5">
                 <div
-                  class="w-3 h-3 md:w-5 md:h-5 rounded-lg group-disabled:animate-progress bg-gradient-to-r from-base-100 from-[length:var(--dot-progress)] to-[rgba(255,255,255,0.4)] to-[length:var(--dot-progress)]"
+                  class="w-3 h-3 rounded-lg group-disabled:animate-progress bg-gradient-to-r from-base-100 from-[length:var(--dot-progress)] to-[rgba(255,255,255,0.4)] to-[length:var(--dot-progress)]"
                   style={{ animationDuration: `${interval}s` }}
                 />
               </div>
@@ -198,12 +198,12 @@ export default function TestimonialsList(
               ))}
             </Slider>
             <>
-              <div class="z-10 absolute -left-2 lg:-left-8 top-1/2">
+              <div class="z-10 absolute -left-2 top-1/2">
                 <Slider.PrevButton class="btn btn-circle btn-outline">
                   <Icon size={24} id="ChevronLeft" strokeWidth={3} />
                 </Slider.PrevButton>
               </div>
-              <div class="z-10 absolute -right-2 lg:-right-8 top-1/2">
+              <div class="z-10 absolute -right-2 top-1/2">
                 <Slider.NextButton class="btn btn-circle btn-outline">
                   <Icon size={24} id="ChevronRight" strokeWidth={3} />
                 </Slider.NextButton>

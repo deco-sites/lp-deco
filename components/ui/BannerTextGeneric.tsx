@@ -81,14 +81,19 @@ export default function BannerTextGeneric(
     </a>
   )
   const textContainer = <>
-    <div class={`flex gap-4 ${layout?.alignment === 'Column' || layout?.alignment === 'Column reverse' ? 'flex flex-col md:flex-row justify-stretch md:justify-around md:items-center gap-12' : 'flex flex-col gap-12'}`}>
-      <div class="w-full">
-        <p class={`${layout?.variants?.section === 'Reverse' ? 'text-[#FFFFFF]' : 'text-[#181212]'} font-semibold text-[40px] md:text-[56px] text-center`}>
+    <div class={`flex gap-4
+      ${layout?.alignment === 'Column reverse' ? 'flex flex-col md:flex-row justify-stretch md:justify-around md:items-center gap-12' : 'flex flex-col gap-12'}
+    `}>
+        <p class={`font-semibold text-[40px] md:text-[56px] w-full
+          ${layout?.variants?.section === 'Reverse' ? 'text-[#FFFFFF]' : 'text-[#181212]'} 
+          ${layout?.alignment === 'Column' ? 'text-center' : 'text-center md:text-start'}
+        `}>
           {title}
         </p>
-      </div>
-      <div class={`flex flex-col gap-6 md:gap-8 w-full ${layout?.alignment === 'Column' || layout?.alignment === 'Column reverse' ? 'md:items-center' : 'items-center'}`}>
-        <div class="text-base md:text-[18px] md:leading-8 text-center">
+      <div class={`flex flex-col gap-6 md:gap-8 w-full ${layout?.alignment === 'Column' ? 'md:items-center' : 'items-center md:items-start'}`}>
+        <div class={`text-base md:text-[18px] md:leading-8
+          ${layout?.alignment === 'Column' ? 'text-center' : 'text-center md:text-start'}
+        `}>
           {description && (
             <p dangerouslySetInnerHTML={{ __html: description }} />
           )}
@@ -104,7 +109,7 @@ export default function BannerTextGeneric(
     <div
       style={layout?.image === 'Backgrond' && banners?.length ? { backgroundImage: `url(${banners[0]?.desktop ?? ""})` } : {}}
       class={`${ layout?.variants?.section === 'Reverse' ? 'bg-[#0A2121]' : 'bg-[#FFF]' } w-full ${layout?.image === 'Backgrond' && 'bannerBackground'}`}>
-      <div class={`xl:container xl:mx-auto mx-5 md:mx-10 ${ALIGNMENT_CONTAINER[layout?.alignment ?? "Column"]} gap-4 md:gap-6 items-center justify-center py-5 md:py-10`}>
+      <div class={`xl:container xl:mx-auto mx-5 md:mx-10 ${ALIGNMENT_CONTAINER[layout?.alignment ?? "Column"]} gap-12 md:gap-16 items-center justify-center py-5 md:py-10`}>
         <div class={`w-full ${ALIGNMENT_FIRST_CHILD[layout?.alignment ?? "Column"]}`}>
           {textContainer}
         </div>
@@ -125,7 +130,7 @@ export default function BannerTextGeneric(
                   height={219.5}
                 />
                 <img
-                  class="w-full h-full object-cover"
+                  class="w-full object-cover"
                   sizes="(max-width: 640px) 100vw, 30vw"
                   src={banners[0]?.mobile ?? ""}
                   alt={banners[0]?.title ?? ""}

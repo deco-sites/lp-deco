@@ -44,16 +44,15 @@ function Header({
   const idHeader = useId();
 
   return (
-    <header>
+    <header style={{ minHeight: "93px" }}>
       <Drawers menu={{ items: navItems, logo }}>
-        <header
-          id={idHeader}
+        <div
           class="bg-[#FFF] fixed w-full z-50 h-[54px] md:h-[95px]"
         >
           <div>
             <Navbar items={navItems} logo={logo} hrefLogin={hrefLogin} />
           </div>
-        </header>
+        </div>
       </Drawers>
     </header>
   );
