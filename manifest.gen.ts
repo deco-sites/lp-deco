@@ -4,34 +4,36 @@
 
 import * as $$$$$$0 from "./sections/Theme.tsx";
 import * as $$$$$$1 from "./sections/Head.tsx";
-import * as $$$$$$2 from "./sections/SimpleTextList.tsx";
-import * as $$$$$$3 from "./sections/Footer.tsx";
-import * as $$$$$$4 from "./sections/Header.tsx";
-import * as $$$$$$5 from "./sections/Intro.tsx";
-import * as $$$$$$6 from "./sections/Banners/BannerTextGeneric.tsx";
-import * as $$$$$$7 from "./sections/List/Benefits.tsx";
-import * as $$$$$$8 from "./sections/List/TestimonialsList.tsx";
-import * as $$$$$$9 from "./sections/List/Partners.tsx";
-import * as $$$$$$10 from "./sections/Hero.tsx";
-import * as $$$$$$11 from "./sections/AboutDeco.tsx";
-import * as $$$$$$12 from "./sections/ParagraphList.tsx";
+import * as $$$$$$2 from "./sections/TextCapture.tsx";
+import * as $$$$$$3 from "./sections/SimpleTextList.tsx";
+import * as $$$$$$4 from "./sections/Footer.tsx";
+import * as $$$$$$5 from "./sections/Header.tsx";
+import * as $$$$$$6 from "./sections/Intro.tsx";
+import * as $$$$$$7 from "./sections/Banners/BannerTextGeneric.tsx";
+import * as $$$$$$8 from "./sections/List/Benefits.tsx";
+import * as $$$$$$9 from "./sections/List/TestimonialsList.tsx";
+import * as $$$$$$10 from "./sections/List/Partners.tsx";
+import * as $$$$$$11 from "./sections/Hero.tsx";
+import * as $$$$$$12 from "./sections/AboutDeco.tsx";
+import * as $$$$$$13 from "./sections/ParagraphList.tsx";
 import * as $$$$$$$$$$$0 from "./apps/site.ts";
 import * as $$$$$$$$$$$1 from "./apps/decohub.ts";
 
 const manifest = {
   "sections": {
-    "deco-sites/lp-deco/sections/AboutDeco.tsx": $$$$$$11,
-    "deco-sites/lp-deco/sections/Banners/BannerTextGeneric.tsx": $$$$$$6,
-    "deco-sites/lp-deco/sections/Footer.tsx": $$$$$$3,
+    "deco-sites/lp-deco/sections/AboutDeco.tsx": $$$$$$12,
+    "deco-sites/lp-deco/sections/Banners/BannerTextGeneric.tsx": $$$$$$7,
+    "deco-sites/lp-deco/sections/Footer.tsx": $$$$$$4,
     "deco-sites/lp-deco/sections/Head.tsx": $$$$$$1,
-    "deco-sites/lp-deco/sections/Header.tsx": $$$$$$4,
-    "deco-sites/lp-deco/sections/Hero.tsx": $$$$$$10,
-    "deco-sites/lp-deco/sections/Intro.tsx": $$$$$$5,
-    "deco-sites/lp-deco/sections/List/Benefits.tsx": $$$$$$7,
-    "deco-sites/lp-deco/sections/List/Partners.tsx": $$$$$$9,
-    "deco-sites/lp-deco/sections/List/TestimonialsList.tsx": $$$$$$8,
-    "deco-sites/lp-deco/sections/ParagraphList.tsx": $$$$$$12,
-    "deco-sites/lp-deco/sections/SimpleTextList.tsx": $$$$$$2,
+    "deco-sites/lp-deco/sections/Header.tsx": $$$$$$5,
+    "deco-sites/lp-deco/sections/Hero.tsx": $$$$$$11,
+    "deco-sites/lp-deco/sections/Intro.tsx": $$$$$$6,
+    "deco-sites/lp-deco/sections/List/Benefits.tsx": $$$$$$8,
+    "deco-sites/lp-deco/sections/List/Partners.tsx": $$$$$$10,
+    "deco-sites/lp-deco/sections/List/TestimonialsList.tsx": $$$$$$9,
+    "deco-sites/lp-deco/sections/ParagraphList.tsx": $$$$$$13,
+    "deco-sites/lp-deco/sections/SimpleTextList.tsx": $$$$$$3,
+    "deco-sites/lp-deco/sections/TextCapture.tsx": $$$$$$2,
     "deco-sites/lp-deco/sections/Theme.tsx": $$$$$$0,
   },
   "apps": {
