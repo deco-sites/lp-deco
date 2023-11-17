@@ -20,6 +20,39 @@ export interface Testimonial {
   };
 }
 
+
+function Dots({ images, interval = 0 }: Props) {
+  return (
+    <>
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+          @property --dot-progress {
+            syntax: '<percentage>';
+            inherits: false;
+            initial-value: 0%;
+          }
+          `,
+        }}
+      />
+      <ul class="carousel flex justify-center w-full gap-4 z-10 absolute bottom-[-8px] -left-4">
+        {images?.map((_, index) => (
+          <li class="carousel-item">
+            <Slider.Dot index={index}>
+              <div class="py-5">
+                <div
+                  class="w-3 h-3 md:w-5 md:h-5 rounded-lg group-disabled:animate-progress bg-gradient-to-r from-base-100 from-[length:var(--dot-progress)] to-[rgba(255,255,255,0.4)] to-[length:var(--dot-progress)]"
+                  style={{ animationDuration: `${interval}s` }}
+                />
+              </div>
+            </Slider.Dot>
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
 export interface Props {
   title?: string;
   description?: string;
@@ -151,7 +184,7 @@ export default function TestimonialsList(
 
         {layout?.variation !== "Grid" && (
           <div
-            class="relative w-full px-8"
+            class="relative w-full px-8 pb-10"
             id={id}
           >
             <Slider class="carousel carousel-start gap-4 lg:gap-8 row-start-2 row-end-5 w-full">
@@ -176,6 +209,8 @@ export default function TestimonialsList(
                 </Slider.NextButton>
               </div>
             </>
+
+            <Dots images={testimonials} interval={0} />
             <SliderJS rootId={id} />
           </div>
         )}

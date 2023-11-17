@@ -194,7 +194,8 @@ function Footer({
       content={newsletter}
       layout={{
         tiled: layout?.variation == "Variation 4" ||
-          layout?.variation == "Variation 5",
+          layout?.variation == "Variation 5" ||
+          layout?.variation == "Variation 6",
       }}
     />
   );
