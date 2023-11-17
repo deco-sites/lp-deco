@@ -29,7 +29,7 @@ function Navbar({ items, logo, hrefLogin }: {
         <div class="flex gap-2">
           <a
             href={"#"}
-            class="flex justify-center items-center text-center rounded-md p-3 bg-[#000] transition-all duration-200 hover:bg-[#FFF] hover:text-[#000] text-[#FFF] border border-[#000] font-bold text-[10px] sm:text-xs"
+            class="flex justify-center items-center text-center rounded-md px-5 py-2 bg-[#000] transition-all duration-200 hover:bg-[#FFF] hover:text-[#000] text-[#FFF] border border-[#000] font-bold text-[10px] sm:text-xs"
           >
             Button
           </a>
@@ -46,7 +46,7 @@ function Navbar({ items, logo, hrefLogin }: {
               class="block pr-3 lg:pr-4"
             >
               <img
-                class="h-full w-[160px] lg:w-[200px] object-contain"
+                class="h-full w-[120px] object-contain"
                 src={logo.src}
                 alt={logo.alt}
               />
@@ -59,9 +59,9 @@ function Navbar({ items, logo, hrefLogin }: {
         <div class="flex gap-2">
           <a
             href={"#"}
-            class="flex justify-center items-center text-center rounded-md bg-[#000] transition-all duration-200 hover:bg-[#FFF] hover:text-[#000] text-[#FFF] border border-[#000] font-bold text-xs lg:text-sm p-2 lg:p-3"
+            class="flex justify-center items-center text-center rounded-md bg-[#000] transition-all duration-200 hover:bg-[#FFF] hover:text-[#000] text-[#FFF] border border-[#000] font-bold text-xs lg:text-sm px-5 py-2"
           >
-            BUTTON
+            Button
           </a>
         </div>
       </div>

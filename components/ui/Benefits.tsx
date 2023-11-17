@@ -18,7 +18,7 @@ export default function Benefits(
   { titleSection, cards, layout }: BenefitsProps,
 ) {
   return (
-    <div class={`w-full ${layout?.background === 'Reverse' ? 'bg-[#0A2121]' : 'bg-[#FFF]'} py-5 md:py-10`}>
+    <div class={`w-full ${layout?.background === 'Reverse' ? 'bg-[#0A2121]' : 'bg-[#FFF]'} py-6 md:py-16`}>
       <div class="xl:container xl:mx-auto mx-5 md:mx-10 flex flex-col items-start justify-center gap-4 md:gap-6">
         <div class="flex justify-start">
           <p class="text-[#02F67C] font-semibold text-[32px] md:text-[40px]">

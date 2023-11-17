@@ -116,59 +116,63 @@ export default function BannerTextGeneric(
   </>
 
   return (
-    <div
-      class={`${ layout?.variants?.section === 'Reverse' ? 'bg-[#0A2121]' : 'bg-[#FFF]' } w-full ${layout?.image === 'Backgrond' && 'bannerBackground'} relative z-0`}>
+    <section class={`${ layout?.variants?.section === 'Reverse' ? 'bg-[#0A2121]' : 'bg-[#FFF]' } w-full py-10 md:py-24`}>
+      <div
+        class={`relative z-0 h-full`}>
 
-      { layout?.image === 'Backgrond' && banners?.length ? <Image width={400} height={380} src={banners[0]?.desktop} class="w-full h-full object-cover absolute z-[-1]" /> : null}
+        { layout?.image === 'Backgrond' && banners?.length ? <Image width={400} height={380} src={banners[0]?.desktop} class="w-full h-full object-cover absolute z-[-1]" /> : null}
 
-      <div class={`xl:container xl:mx-auto mx-5 md:mx-10 ${ALIGNMENT_CONTAINER[layout?.alignment ?? "Column"]} gap-12 md:gap-16 items-center justify-center py-5 md:py-10`}>
-        <div />
-        <div class={`w-full ${ALIGNMENT_FIRST_CHILD[layout?.alignment ?? "Column"]}`}>
-          {textContainer}
-        </div>
-        <div class={`w-full ${ALIGNMENT_LAST_CHILD[layout?.alignment ?? "Column"]}`}>
-          { layout?.image === 'Backgrond' ? null : banners?.length === 1 ? (
-            <div>
-              <Picture>
-                <Source
-                  media="(max-width: 767px)"
-                  src={banners[0]?.mobile ?? ""}
-                  width={181.5}
-                  height={174.75}
-                />
-                <Source
-                  media="(min-width: 768px)"
-                  src={banners[0]?.desktop ?? ""}
-                  width={228}
-                  height={219.5}
-                />
-                <img
-                  class="w-full object-cover"
-                  sizes="(max-width: 640px) 100vw, 30vw"
-                  src={banners[0]?.mobile ?? ""}
-                  alt={banners[0]?.title ?? ""}
-                  decoding="async"
-                  loading="lazy"
-                />
-              </Picture>
-              <div class="flex flex-col bg-[#f2f2f2] items-start gap-4 px-4 py-8 md:px-6 md:py-10">
-                <div class="flex justify-start">
-                  <h1 class="text-[#0A2121] font-semibold text-xl lg:text-2xl">
-                    {banners[0]?.title}
-                  </h1>
-                </div>
-                <div class="flex flex-col items-start w-full text-[#0A2121]">
-                  {banners[0]?.description && (
-                    <p class="md:leading-8">{banners[0]?.description}</p>
-                  )}
-                </div>
+        <div class={`xl:container xl:mx-auto mx-5 md:mx-10 ${ALIGNMENT_CONTAINER[layout?.alignment ?? "Column"]} gap-12 md:gap-16 items-center justify-center`}>
+          <div />
+          <div class={`w-full ${ALIGNMENT_FIRST_CHILD[layout?.alignment ?? "Column"]}`}>
+            {textContainer}
+          </div>
+          <div class={`w-full ${ALIGNMENT_LAST_CHILD[layout?.alignment ?? "Column"]}`}>
+            { layout?.image === 'Backgrond' ? null : banners?.length === 1 ? (
+              <div>
+                <Picture>
+                  <Source
+                    media="(max-width: 767px)"
+                    src={banners[0]?.mobile ?? ""}
+                    width={181.5}
+                    height={174.75}
+                  />
+                  <Source
+                    media="(min-width: 768px)"
+                    src={banners[0]?.desktop ?? ""}
+                    width={228}
+                    height={219.5}
+                  />
+                  <img
+                    class="w-full object-cover"
+                    sizes="(max-width: 640px) 100vw, 30vw"
+                    src={banners[0]?.mobile ?? ""}
+                    alt={banners[0]?.title ?? ""}
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </Picture>
+                { banners[0]?.title || banners[0]?.description ? (
+                <div class="flex flex-col bg-[#f2f2f2] items-start gap-4 px-4 py-8 md:px-6 md:py-10">
+                    <div class="flex justify-start">
+                      <h1 class="text-[#0A2121] font-semibold text-xl lg:text-2xl">
+                        {banners[0]?.title}
+                      </h1>
+                    </div>
+                    <div class="flex flex-col items-start w-full text-[#0A2121]">
+                      {banners[0]?.description && (
+                        <p class="md:leading-8">{banners[0]?.description}</p>
+                      )}
+                    </div>
+                  </div>
+                ) : null }
               </div>
-            </div>
-        ) : (
-            <BannerCarousel images={banners}  />
-          )}
+          ) : (
+              <BannerCarousel images={banners}  />
+            )}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

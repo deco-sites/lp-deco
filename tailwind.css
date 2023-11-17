@@ -10,6 +10,24 @@
     background-color: #FFF;
   }
 
+  .gradient-left,
+  .gradient-right {
+    width: 14%; /* Ajuste conforme necessário */
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  .gradient-right {
+    left: -1px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  }
+  .gradient-left {
+    right: -1px;
+    left: auto;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  }
+
   /** Remove default styles from input[type=number] */
   input[type=number]::-webkit-inner-spin-button,
   input[type=number]::-webkit-outer-spin-button {

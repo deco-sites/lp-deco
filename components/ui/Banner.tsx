@@ -82,7 +82,7 @@ export default function Banner({
   fullWidth,
 }: Props) {
   return (
-    <div class="bg-[#FFF] w-full h-full">
+    <div class="bg-[#FFF] w-full h-full pb-10">
       <section
         class={`xl:container w-full mx-auto py-2 md:pb-12 ${
           fullWidth ? "px-0" : "px-5"
@@ -128,13 +128,16 @@ export default function Banner({
               </Picture>
               {action && (
                 <div class="absolute h-min m-auto flex flex-col gap-4 p-4 rounded justify-center items-center">
-                  <span class="text-6xl font-medium text-base-100">
+                  <span class="text-6xl font-bold text-base-100">
                     {action?.title}
                   </span>
                   <span class="font-medium text-xl text-base-100">
                     {action?.subTitle}
                   </span>
-                  <Button class="bg-[#000] text-[#FFF] hover:bg-[#FFF] hover:text-[#000] border-[#181212] rounded-md">{action.label}</Button>
+                  <div class="flex gap-4">
+                    <Button class="bg-[#000] text-[#FFF] hover:bg-[#FFF] hover:text-[#000] border-[#181212] rounded-md">{action.label}</Button>
+                    <Button class="bg-transparent text-[#FFF] hover:bg-[#000] hover:text-[#FFF] border-[#FFF] hover:border-[#181212] rounded-md">{action.label}</Button>
+                  </div>
                 </div>
               )}
             </a>
