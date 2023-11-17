@@ -12,11 +12,28 @@ export interface CardProps {
   labelIcon?: AvailableIcons;
   title?: string;
   description?: string;
+  cta?: {
+    href: string,
+    text?: string,
+    label?: AvailableIcons,
+    hide?: {
+      label?: boolean
+    },
+    variant?: "Normal" | "Reverse" | "Border none"
+  }
 }
+
+const background_cta = (variant: "Normal" | "Reverse") => ({
+  'Reverse': 'bg-[#FFF] text-[#000] border border-[#181212] hover:bg-[#000] hover:text-[#FFF]',
+  'Normal': 'bg-[#000] text-[#FFF] border border-[#181212] hover:bg-[#FFF] hover:text-[#181212]',
+  'Border none': `bg-transparent ${variant === 'Reverse' ? 'text-[#FFF] hover:bg-[#FFF] hover:text-[#181212]' : 'text-[#181212] hover:bg-[#000] hover:text-[#FFF]'} border-none`
+})
 
 export default function Benefits(
   { titleSection, cards, layout }: BenefitsProps,
 ) {
+
+
   return (
     <div class={`w-full ${layout?.background === 'Reverse' ? 'bg-[#0A2121]' : 'bg-[#FFF]'} py-6 md:py-16`}>
       <div class="xl:container xl:mx-auto mx-5 md:mx-10 flex flex-col items-start justify-center gap-4 md:gap-6">
@@ -27,7 +44,7 @@ export default function Benefits(
         </div>
         <div class="grid flex-row wrap justify-center gap-2 grid-cols-2 lg:grid-cols-4">
           {cards?.map((
-            { labelIcon, title, description }: CardProps,
+            { labelIcon, title, description, cta }: CardProps,
             index: number,
           ) => (
             <div
@@ -39,6 +56,20 @@ export default function Benefits(
                 <p class="font-semibold mt-2 md:mt-0 md:text-[28px]">{title}</p>
               )}
               {description && <p class="text-xs md:text-base">{description}</p>}
+              {cta?.text && (
+                <a 
+                  href={cta?.href ?? "#"} 
+                  class={`${background_cta('Normal')[cta?.variant]} btn px-6 py-3 ${!cta?.hide?.label ? 'pr-3' : 'pr-5'} 
+                  rounded-lg transition-colors duration-200 flex items-center`}
+                >
+                  <span class="h-full flex justify-center items-center">
+                    {cta?.text}
+                  </span>
+                  <span class="h-full flex justify-center items-center">
+                    { !cta?.hide?.label ? <Icon id={cta?.label} size={30} /> : '' }
+                  </span>
+                </a>
+              )}
             </div>
           ))}
         </div>
