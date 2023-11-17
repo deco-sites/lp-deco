@@ -48,7 +48,7 @@ function Header({
       <Drawers menu={{ items: navItems, logo }}>
         <header
           id={idHeader}
-          class="bg-transparent fixed w-full z-50 h-[54px] md:h-[95px]"
+          class="bg-[#FFF] fixed w-full z-50 h-[54px] md:h-[95px]"
         >
           <div>
             <Navbar items={navItems} logo={logo} hrefLogin={hrefLogin} />

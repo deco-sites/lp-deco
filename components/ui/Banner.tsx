@@ -82,63 +82,65 @@ export default function Banner({
   fullWidth,
 }: Props) {
   return (
-    <section
-      class={`bg-[#FFF] xl:container w-full mx-auto py-2 md:pb-12 ${
-        fullWidth ? "px-0" : "px-5"
-      }`}
-    >
-      <Header
-        title={title || ""}
-        description={""}
-        fontSize={"Large"}
-        alignment={"center"}
-      />
-      <div
-        class={`grid gap-4 md:gap-6 grid-cols-1`}
+    <div class="bg-[#FFF] w-full h-full">
+      <section
+        class={`xl:container w-full mx-auto py-2 md:pb-12 ${
+          fullWidth ? "px-0" : "px-5"
+        }`}
       >
-        {banners.map(({ srcMobile, srcDesktop, alt, action }) => (
-          <a
-            href={action?.href ?? "#"}
-            class={`overflow-hidden relative flex justify-center items-center ${
-              RADIUS_MOBILE[borderRadius.mobile ?? "none"]
-            } ${RADIUS_DESKTOP[borderRadius.desktop ?? "none"]} `}
-          >
-            <Picture preload={false}>
-              <Source
-                media="(max-width: 767px)"
-                src={srcMobile ?? ""}
-                width={152}
-                height={68}
-              />
-              <Source
-                media="(min-width: 768px)"
-                src={srcDesktop ?? ""}
-                width={384}
-                height={168}
-              />
-              <img
-                class="w-full"
-                sizes="(max-width: 640px) 100vw, 30vw"
-                src={srcMobile ?? ""}
-                alt={alt}
-                decoding="async"
-                loading="lazy"
-              />
-            </Picture>
-            {action && (
-              <div class="absolute h-min m-auto flex flex-col gap-4 p-4 rounded justify-center items-center">
-                <span class="text-6xl font-medium text-base-100">
-                  {action?.title}
-                </span>
-                <span class="font-medium text-xl text-base-100">
-                  {action?.subTitle}
-                </span>
-                <Button class="bg-[#000] text-[#FFF] hover:bg-[#FFF] hover:text-[#000] border-[#181212] rounded-md">{action.label}</Button>
-              </div>
-            )}
-          </a>
-        ))}
-      </div>
-    </section>
+        <Header
+          title={title || ""}
+          description={""}
+          fontSize={"Large"}
+          alignment={"center"}
+        />
+        <div
+          class={`grid gap-4 md:gap-6 grid-cols-1`}
+        >
+          {banners.map(({ srcMobile, srcDesktop, alt, action }) => (
+            <a
+              href={action?.href ?? "#"}
+              class={`overflow-hidden relative flex justify-center items-center ${
+                RADIUS_MOBILE[borderRadius.mobile ?? "none"]
+              } ${RADIUS_DESKTOP[borderRadius.desktop ?? "none"]} `}
+            >
+              <Picture preload={false}>
+                <Source
+                  media="(max-width: 767px)"
+                  src={srcMobile ?? ""}
+                  width={152}
+                  height={68}
+                />
+                <Source
+                  media="(min-width: 768px)"
+                  src={srcDesktop ?? ""}
+                  width={384}
+                  height={168}
+                />
+                <img
+                  class="w-full"
+                  sizes="(max-width: 640px) 100vw, 30vw"
+                  src={srcMobile ?? ""}
+                  alt={alt}
+                  decoding="async"
+                  loading="lazy"
+                />
+              </Picture>
+              {action && (
+                <div class="absolute h-min m-auto flex flex-col gap-4 p-4 rounded justify-center items-center">
+                  <span class="text-6xl font-medium text-base-100">
+                    {action?.title}
+                  </span>
+                  <span class="font-medium text-xl text-base-100">
+                    {action?.subTitle}
+                  </span>
+                  <Button class="bg-[#000] text-[#FFF] hover:bg-[#FFF] hover:text-[#000] border-[#181212] rounded-md">{action.label}</Button>
+                </div>
+              )}
+            </a>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }
