@@ -83,7 +83,7 @@ export default function Banner({
 }: Props) {
   return (
     <section
-      class={`xl:container w-full mx-auto py-2 md:pb-12 ${
+      class={`bg-[#FFF] xl:container w-full mx-auto py-2 md:pb-12 ${
         fullWidth ? "px-0" : "px-5"
       }`}
     >
@@ -99,7 +99,7 @@ export default function Banner({
         {banners.map(({ srcMobile, srcDesktop, alt, action }) => (
           <a
             href={action?.href ?? "#"}
-            class={`overflow-hidden relative ${
+            class={`overflow-hidden relative flex justify-center items-center ${
               RADIUS_MOBILE[borderRadius.mobile ?? "none"]
             } ${RADIUS_DESKTOP[borderRadius.desktop ?? "none"]} `}
           >
@@ -125,16 +125,15 @@ export default function Banner({
                 loading="lazy"
               />
             </Picture>
-            <div class="absolute flex flex-col justify-center items-center top-0 left-0 w-full h-full hover:bg-gray-600 hover:opacity-30 transition-all duration-500" />
             {action && (
-              <div class="absolute h-min top-0 bottom-0 m-auto left-0 right-0 sm:right-auto sm:left-[12%] max-h-min max-w-[235px] flex flex-col gap-4 p-4 rounded">
+              <div class="absolute h-min m-auto flex flex-col gap-4 p-4 rounded justify-center items-center">
                 <span class="text-6xl font-medium text-base-100">
-                  {action.title}
+                  {action?.title}
                 </span>
                 <span class="font-medium text-xl text-base-100">
-                  {action.subTitle}
+                  {action?.subTitle}
                 </span>
-                <Button>{action.label}</Button>
+                <Button class="bg-[#000] text-[#FFF] hover:bg-[#FFF] hover:text-[#000] border-[#181212] rounded-md">{action.label}</Button>
               </div>
             )}
           </a>

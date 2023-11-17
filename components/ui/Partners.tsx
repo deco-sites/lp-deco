@@ -46,7 +46,7 @@ function Partners(props: Props) {
     <div class="w-full bg-[#FFF] py-5 md:py-10">
       <div class="xl:container xl:mx-auto mx-5 md:mx-10 flex flex-col gap-4 lg:gap-8">
         {title && (
-          <p class="text-[#02F67C] text-[40px] font-semibold">{title}</p>
+          <p class="text-[#000] text-[40px] font-semibold">{title}</p>
         )}
 
         <div class="w-full text-center items-center">

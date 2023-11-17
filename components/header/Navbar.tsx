@@ -29,7 +29,7 @@ function Navbar({ items, logo, hrefLogin }: {
         <div class="flex gap-2">
           <a
             href={"#"}
-            class="flex justify-center items-center text-center rounded-md p-3 bg-[#240F51] transition-all duration-200 text-[#13E5D6] border border-[#13E5D6] font-bold text-[10px] sm:text-xs"
+            class="flex justify-center items-center text-center rounded-md p-3 bg-[#000] transition-all duration-200 hover:bg-[#FFF] hover:text-[#000] text-[#FFF] border border-[#000] font-bold text-[10px] sm:text-xs"
           >
             Button
           </a>
@@ -59,7 +59,7 @@ function Navbar({ items, logo, hrefLogin }: {
         <div class="flex gap-2">
           <a
             href={"#"}
-            class="flex justify-center items-center text-center rounded-md bg-[#240F51] transition-all duration-200 hover:bg-[#13E5D6] hover:text-[#120C45] text-[#13E5D6] border border-[#13E5D6] font-bold text-xs lg:text-sm p-2 lg:p-3"
+            class="flex justify-center items-center text-center rounded-md bg-[#000] transition-all duration-200 hover:bg-[#FFF] hover:text-[#000] text-[#FFF] border border-[#000] font-bold text-xs lg:text-sm p-2 lg:p-3"
           >
             BUTTON
           </a>

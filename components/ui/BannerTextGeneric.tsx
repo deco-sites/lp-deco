@@ -63,8 +63,8 @@ export default function BannerTextGeneric(
     }
 
   const BACKGROUND_CTA = {
-    'Reverse': 'bg-[#FFF] text-[#000] border border-accent hover:bg-[#000] hover:text-[#FFF]',
-    'Normal': 'bg-[#000] text-[#FFF] border-none hover:bg-[#FFF] hover:text-[#181212]',
+    'Reverse': 'bg-[#FFF] text-[#000] border border-[#181212] hover:bg-[#000] hover:text-[#FFF]',
+    'Normal': 'bg-[#000] text-[#FFF] border border-[#181212] hover:bg-[#FFF] hover:text-[#181212]',
     'Border none': `bg-transparent ${layout?.variants?.section === 'Reverse' ? 'text-[#FFF] hover:bg-[#FFF] hover:text-[#181212]' : 'text-[#181212] hover:bg-[#000] hover:text-[#FFF]'} border-none`
   }
 
@@ -76,7 +76,7 @@ export default function BannerTextGeneric(
   }
 
   const cta = ({ href, text }: {href: string, text: string, label?: AvailableIcons }) => hide?.cta ? <></> : (
-    <a href={href ?? "#"} class={`btn px-6 py-3 transition-colors duration-200 ${BACKGROUND_CTA[layout?.variants?.cta ?? "Normal"]}`}>
+    <a href={href ?? "#"} class={`btn px-6 py-3 rounded-lg transition-colors duration-200 ${BACKGROUND_CTA[layout?.variants?.cta ?? "Normal"]}`}>
       {text}
     </a>
   )

@@ -11,10 +11,12 @@ const ALIGNMENT_TEXT = {
 
 export default function Intro({ text = "Lorem ipsum dolor sit amet consectetur. Placerat ornare diam nulla fringilla gravida justo elementum. Ut sed in.", alignment = "Left" }: IntroProps) {
   return (
-    <div class="xl:container mx-auto px-4 py-8 md:py-12">
-      <div class={`flex ${ALIGNMENT_TEXT[alignment ?? 'Left']}`}>
-        <h1 class="font-bold text-[40px]">{text}</h1>
+    <section class="bg-[#FFF]">
+      <div class="xl:container mx-auto px-4 py-8 md:py-12">
+        <div class={`flex ${ALIGNMENT_TEXT[alignment ?? 'Left']}`}>
+          <h1 class="font-bold text-[#181212] text-[40px]">{text}</h1>
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
