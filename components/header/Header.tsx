@@ -1,8 +1,8 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Navbar from "./Navbar.tsx";
 import { AvailableIcons } from "$store/components/ui/Icon.tsx";
-import Drawers from "deco-sites/start/islands/Drawers.tsx";
-import { useId } from "deco-sites/start/sdk/useId.ts";
+import Drawers from "$store/islands/Drawers.tsx";
+import { useId } from "$store/sdk/useId.ts";
 
 export interface NavItem {
   label: string;

@@ -3,6 +3,9 @@ import Icon, { AvailableIcons } from "./Icon.tsx";
 export interface WhyGetInvolvedProps {
   titleSection?: string;
   cards?: CardProps[];
+  layout?: {
+    background: 'Normal' | 'Reverse'
+  }
 }
 
 export interface CardProps {
@@ -12,10 +15,10 @@ export interface CardProps {
 }
 
 export default function WhyGetInvolved(
-  { titleSection, cards }: WhyGetInvolvedProps,
+  { titleSection, cards, layout }: WhyGetInvolvedProps,
 ) {
   return (
-    <div class="w-full bg-[#0A2121] py-5 md:py-10">
+    <div class={`w-full ${layout?.background === 'Reverse' ? 'bg-[#0A2121]' : 'bg-[#FFF]'} py-5 md:py-10`}>
       <div class="xl:container xl:mx-auto mx-5 md:mx-10 flex flex-col items-start justify-center gap-4 md:gap-6">
         <div class="flex justify-start">
           <p class="text-[#02F67C] font-semibold text-[32px] md:text-[40px]">
@@ -29,7 +32,7 @@ export default function WhyGetInvolved(
           ) => (
             <div
               key={index}
-              class="bg-[#0C2929] flex flex-col justify-center items-start gap-2 md:gap-6 p-6 md:p-10 py-12 md:py-20 text-[#FFFFFF] rounded-2xl"
+              class={`flex flex-col justify-center items-start gap-2 md:gap-6 p-6 md:p-10 py-12 md:py-20 ${layout?.background === 'Reverse' ? 'text-[#FFFFFF]' : 'text-[#000]'} rounded-2xl hover:translate-y-4 transition-transform duration-200`}
             >
               {labelIcon && <Icon id={labelIcon ?? ""} size={40} />}
               {title && (

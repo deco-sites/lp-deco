@@ -24,6 +24,12 @@
   .animate-walk {
     animation: walk 30s ease-in-out alternate infinite;
   }
+
+  .bannerBackground {
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 @layer components {
