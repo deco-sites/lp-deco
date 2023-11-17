@@ -20,6 +20,10 @@
     -moz-appearance: textfield;
     appearance: textfield;
   }
+  
+  .animate-walk {
+    animation: walk 30s ease-in-out alternate infinite;
+  }
 }
 
 @layer components {
@@ -41,5 +45,14 @@
 
   .scrollbar-none::-webkit-scrollbar {
     display: none;
+  }
+}
+
+@keyframes walk {
+  from {
+    transform: translateX(0%)
+  }
+  to {
+    transform: translateX(-50%)
   }
 }

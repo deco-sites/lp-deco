@@ -2,25 +2,33 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $$$$$$0 from "./sections/Hero.tsx";
-import * as $$$$$$1 from "./sections/Theme.tsx";
-import * as $$$$$$2 from "./sections/Footer.tsx";
-import * as $$$$$$3 from "./sections/SimpleTextList.tsx";
-import * as $$$$$$4 from "./sections/ParagraphList.tsx";
-import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$1 from "./apps/site.ts";
+import * as $$$$$$0 from "./sections/Theme.tsx";
+import * as $$$$$$1 from "./sections/Head.tsx";
+import * as $$$$$$2 from "./sections/SimpleTextList.tsx";
+import * as $$$$$$3 from "./sections/Footer.tsx";
+import * as $$$$$$4 from "./sections/List/WhyGetInvolved.tsx";
+import * as $$$$$$5 from "./sections/List/Partners.tsx";
+import * as $$$$$$6 from "./sections/Hero.tsx";
+import * as $$$$$$7 from "./sections/AboutDeco.tsx";
+import * as $$$$$$8 from "./sections/ParagraphList.tsx";
+import * as $$$$$$$$$$$0 from "./apps/site.ts";
+import * as $$$$$$$$$$$1 from "./apps/decohub.ts";
 
 const manifest = {
   "sections": {
-    "deco-sites/lp-deco/sections/Footer.tsx": $$$$$$2,
-    "deco-sites/lp-deco/sections/Hero.tsx": $$$$$$0,
-    "deco-sites/lp-deco/sections/ParagraphList.tsx": $$$$$$4,
-    "deco-sites/lp-deco/sections/SimpleTextList.tsx": $$$$$$3,
-    "deco-sites/lp-deco/sections/Theme.tsx": $$$$$$1,
+    "deco-sites/lp-deco/sections/AboutDeco.tsx": $$$$$$7,
+    "deco-sites/lp-deco/sections/Footer.tsx": $$$$$$3,
+    "deco-sites/lp-deco/sections/Head.tsx": $$$$$$1,
+    "deco-sites/lp-deco/sections/Hero.tsx": $$$$$$6,
+    "deco-sites/lp-deco/sections/List/Partners.tsx": $$$$$$5,
+    "deco-sites/lp-deco/sections/List/WhyGetInvolved.tsx": $$$$$$4,
+    "deco-sites/lp-deco/sections/ParagraphList.tsx": $$$$$$8,
+    "deco-sites/lp-deco/sections/SimpleTextList.tsx": $$$$$$2,
+    "deco-sites/lp-deco/sections/Theme.tsx": $$$$$$0,
   },
   "apps": {
-    "deco-sites/lp-deco/apps/decohub.ts": $$$$$$$$$$$0,
-    "deco-sites/lp-deco/apps/site.ts": $$$$$$$$$$$1,
+    "deco-sites/lp-deco/apps/decohub.ts": $$$$$$$$$$$1,
+    "deco-sites/lp-deco/apps/site.ts": $$$$$$$$$$$0,
   },
   "name": "deco-sites/lp-deco",
   "baseUrl": import.meta.url,
