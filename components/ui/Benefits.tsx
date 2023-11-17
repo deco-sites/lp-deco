@@ -1,6 +1,6 @@
 import Icon, { AvailableIcons } from "./Icon.tsx";
 
-export interface WhyGetInvolvedProps {
+export interface BenefitsProps {
   titleSection?: string;
   cards?: CardProps[];
   layout?: {
@@ -15,7 +15,7 @@ export interface CardProps {
 }
 
 export default function Benefits(
-  { titleSection, cards, layout }: WhyGetInvolvedProps,
+  { titleSection, cards, layout }: BenefitsProps,
 ) {
   return (
     <div class={`w-full ${layout?.background === 'Reverse' ? 'bg-[#0A2121]' : 'bg-[#FFF]'} py-5 md:py-10`}>
@@ -32,7 +32,7 @@ export default function Benefits(
           ) => (
             <div
               key={index}
-              class={`flex flex-col justify-center items-start gap-2 md:gap-6 p-6 md:p-10 py-12 md:py-20 ${layout?.background === 'Reverse' ? 'text-[#FFFFFF]' : 'text-[#000]'} rounded-2xl hover:translate-y-4 transition-transform duration-200`}
+              class={`flex flex-col justify-start items-start gap-2 md:gap-6 p-6 md:p-10 py-12 md:py-20 ${layout?.background === 'Reverse' ? 'text-[#FFFFFF]' : 'text-[#000]'} rounded-2xl hover:translate-y-4 transition-transform duration-200`}
             >
               {labelIcon && <Icon id={labelIcon ?? ""} size={40} />}
               {title && (

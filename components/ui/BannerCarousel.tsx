@@ -55,7 +55,7 @@ function BannerItem({ banner: { mobile = "", desktop = "", title = "", descripti
         />
       </Picture>
       {title || description ? (
-        <div class="flex flex-col items-start gap-4 w-full bg-[#f2f2f2] px-4 pt-8 pb-14 md:px-6 md:pt-10 md:pb-24">
+        <div class="flex flex-col items-start gap-4 w-full bg-[#f2f2f2] px-4 pt-8 pb-20 md:px-6 md:pt-10 md:pb-24">
           <span class="text-xl lg:text-2xl font-semibold text-[#0A2121] w-full">
             {title}
           </span>
@@ -82,13 +82,13 @@ function Dots({ images, interval = 0 }: Props) {
           `,
         }}
       />
-      <ul class="carousel justify-center w-full gap-4 z-10 absolute bottom-3 left-2">
+      <ul class="carousel justify-center md:justify-stretch w-full md:w-auto gap-4 z-10 absolute bottom-3 md:left-4">
         {images?.map((_, index) => (
           <li class="carousel-item">
             <Slider.Dot index={index}>
               <div class="py-5">
                 <div
-                  class="w-5 h-5 rounded dotUnit group-disabled:animate-progress bg-gradient-to-r from-base-100 from-[length:var(--dot-progress)] to-[rgba(255,255,255,0.4)] to-[length:var(--dot-progress)]"
+                  class="w-3 h-3 md:w-5 md:h-5 rounded-lg group-disabled:animate-progress bg-gradient-to-r from-base-100 from-[length:var(--dot-progress)] to-[rgba(255,255,255,0.4)] to-[length:var(--dot-progress)]"
                   style={{ animationDuration: `${interval}s` }}
                 />
               </div>
@@ -102,7 +102,7 @@ function Dots({ images, interval = 0 }: Props) {
 
 function Buttons() {
   return (
-    <div class="flex gap-4 absolute bottom-3 right-4 z-10">
+    <div class="hidden md:flex gap-4 absolute bottom-3 right-4 z-10">
       <div class="flex items-center justify-center">
         <Slider.PrevButton class="btn btn-circle bg-transparent border-[#0A2121]">
           <Icon

@@ -30,6 +30,14 @@
     background-position: cover;
     background-repeat: no-repeat;
   }
+
+  .buttonSummaryCarrosel > div > div {
+    background: #8D8D8D;
+  }
+
+  .buttonSummaryCarrosel:disabled > div > div {
+    background: #000;
+  }
 }
 
 @layer components {
