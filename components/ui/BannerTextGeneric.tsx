@@ -1,7 +1,8 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
 import BannerCarousel from '$store/components/ui/BannerCarousel.tsx';
+import type { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
 export interface BannerProps {
   /**  @title Image Mobile */
@@ -59,9 +60,9 @@ export default function BannerTextGeneric(
     }
 
     const ALIGNMENT_FIRST_CHILD = {
-      'Row': 'col-start-1',
+      'Row': 'col-start-1 row-start-1',
       'Column': '',
-      'Row reverse': banners?.length > 0 ? 'col-start-2' : 'col-start-1',
+      'Row reverse': banners?.length > 0 ? 'col-start-2 row-start-1' : 'col-start-1 row-start-1',
       'Column reverse': ''
     }
 
@@ -79,7 +80,7 @@ export default function BannerTextGeneric(
   }
 
   const cta = ({ href, text, label, hide }: {href: string, text: string, label?: AvailableIcons }) => hide?.cta ? <></> : (
-      <a href={href ?? "#"} class={`btn px-6 py-3 ${!hide?.label ? 'pr-3' : ''} rounded-lg transition-colors duration-200 flex items-center ${BACKGROUND_CTA[layout?.variants?.cta ?? "Normal"]}`}>
+      <a href={href ?? "#"} class={`btn px-6 py-3  ${!hide?.label ? 'pr-3' : 'pr-5'} rounded-lg transition-colors duration-200 flex items-center ${BACKGROUND_CTA[layout?.variants?.cta ?? "Normal"]}`}>
         <span class="h-full flex justify-center items-center">
           {text}
         </span>
@@ -100,6 +101,7 @@ export default function BannerTextGeneric(
         </p>
       <div class={`flex flex-col gap-6 md:gap-8 w-full ${layout?.alignment === 'Column' ? 'md:items-center' : 'items-center md:items-start'}`}>
         <div class={`text-base md:text-[18px] md:leading-8
+          ${layout?.variants?.section === 'Reverse' ? 'text-[#FFFFFF]' : 'text-[#181212]'} 
           ${layout?.alignment === 'Column' ? 'text-center' : 'text-center md:text-start'}
         `}>
           {description && (
@@ -115,9 +117,12 @@ export default function BannerTextGeneric(
 
   return (
     <div
-      style={layout?.image === 'Backgrond' && banners?.length ? { backgroundImage: `url(${banners[0]?.desktop ?? ""})` } : {}}
-      class={`${ layout?.variants?.section === 'Reverse' ? 'bg-[#0A2121]' : 'bg-[#FFF]' } w-full ${layout?.image === 'Backgrond' && 'bannerBackground'}`}>
+      class={`${ layout?.variants?.section === 'Reverse' ? 'bg-[#0A2121]' : 'bg-[#FFF]' } w-full ${layout?.image === 'Backgrond' && 'bannerBackground'} relative z-0`}>
+
+      { layout?.image === 'Backgrond' && banners?.length ? <Image width={180} height={173} src={banners[0]?.desktop} class="w-full h-full object-cover absolute z-[-1]" /> : null}
+
       <div class={`xl:container xl:mx-auto mx-5 md:mx-10 ${ALIGNMENT_CONTAINER[layout?.alignment ?? "Column"]} gap-12 md:gap-16 items-center justify-center py-5 md:py-10`}>
+        <div />
         <div class={`w-full ${ALIGNMENT_FIRST_CHILD[layout?.alignment ?? "Column"]}`}>
           {textContainer}
         </div>
