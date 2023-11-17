@@ -23,6 +23,9 @@ export interface BannerTextGenericProps {
     href: string,
     text: string,
     label?: AvailableIcons
+    hide?: {
+      label?: boolean
+    }
   }[]
 
   banners?: BannerProps[]
@@ -75,10 +78,15 @@ export default function BannerTextGeneric(
     'Column reverse': 'flex flex-col-reverse items-center'
   }
 
-  const cta = ({ href, text }: {href: string, text: string, label?: AvailableIcons }) => hide?.cta ? <></> : (
-    <a href={href ?? "#"} class={`btn px-6 py-3 rounded-lg transition-colors duration-200 ${BACKGROUND_CTA[layout?.variants?.cta ?? "Normal"]}`}>
-      {text}
-    </a>
+  const cta = ({ href, text, label, hide }: {href: string, text: string, label?: AvailableIcons }) => hide?.cta ? <></> : (
+      <a href={href ?? "#"} class={`btn px-6 py-3 ${!hide?.label ? 'pr-3' : ''} rounded-lg transition-colors duration-200 flex items-center ${BACKGROUND_CTA[layout?.variants?.cta ?? "Normal"]}`}>
+        <span class="h-full flex justify-center items-center">
+          {text}
+        </span>
+        <span class="h-full flex justify-center items-center">
+          { !hide?.label ? <Icon id={label} size={30} /> : '' }
+        </span>
+      </a>
   )
   const textContainer = <>
     <div class={`flex gap-4
