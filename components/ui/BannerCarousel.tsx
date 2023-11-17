@@ -51,11 +51,11 @@ function BannerItem({ banner: { mobile = "", desktop = "", title = "", descripti
         <img
           class="object-cover w-full h-full"
           src={desktop}
-          alt={title}
+          alt={title ?? ""}
         />
       </Picture>
-      {title || description && (
-        <div class="flex flex-col items-start gap-4 w-full bg-[#f2f2f2] px-4 py-8 md:px-6 md:py-10">
+      {title || description ? (
+        <div class="flex flex-col items-start gap-4 w-full bg-[#f2f2f2] px-4 pt-8 pb-14 md:px-6 md:pt-10 md:pb-24">
           <span class="text-xl lg:text-2xl font-semibold text-[#0A2121] w-full">
             {title}
           </span>
@@ -63,7 +63,7 @@ function BannerItem({ banner: { mobile = "", desktop = "", title = "", descripti
             {description}
           </span>
         </div>
-      )}
+      ) : null}
     </div>
   );
 }
@@ -82,7 +82,7 @@ function Dots({ images, interval = 0 }: Props) {
           `,
         }}
       />
-      <ul class="carousel justify-center col-span-full gap-4 z-10 row-start-4 absolute bottom-2 left-2">
+      <ul class="carousel justify-center w-full gap-4 z-10 absolute bottom-3 left-2">
         {images?.map((_, index) => (
           <li class="carousel-item">
             <Slider.Dot index={index}>
@@ -102,28 +102,28 @@ function Dots({ images, interval = 0 }: Props) {
 
 function Buttons() {
   return (
-    <>
-      <div class="flex items-center justify-center z-10 absolute bottom-2 right-4">
-        <Slider.PrevButton class="btn btn-circle bg-transparent hover:bg-[#f8a531] transition-all duration-500 rounded-none">
+    <div class="flex gap-4 absolute bottom-3 right-4 z-10">
+      <div class="flex items-center justify-center">
+        <Slider.PrevButton class="btn btn-circle bg-transparent border-[#0A2121]">
           <Icon
-            class="text-base-100"
+            class="text-[#0A2121]"
             size={24}
             id="ChevronLeft"
             strokeWidth={3}
           />
         </Slider.PrevButton>
       </div>
-      <div class="flex items-center justify-center z-10 col-start-3 row-start-2">
-        <Slider.NextButton class="btn btn-circle bg-transparent hover:bg-[#f8a531] transition-all duration-500 rounded-none">
+      <div class="flex items-center justify-center">
+        <Slider.NextButton class="btn btn-circle bg-transparent border-[#0A2121]">
           <Icon
-            class="text-base-100"
+            class="text-[#0A2121]"
             size={24}
             id="ChevronRight"
             strokeWidth={3}
           />
         </Slider.NextButton>
       </div>
-    </>
+    </div>
   );
 }
 
@@ -138,7 +138,7 @@ function BannerCarousel(props: Props) {
   return (
     <div
       id={id}
-      class="grid grid-cols-[1fr] grid-rows-[1fr_20px]"
+      class="grid grid-cols-[1fr] grid-rows-[1fr_10px]"
     >
       <Slider class="carousel carousel-center w-full col-span-full row-span-full gap-6">
         {images?.map((image, index) => (
