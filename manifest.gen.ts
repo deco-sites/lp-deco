@@ -8,23 +8,25 @@ import * as $$$$$$2 from "./sections/SimpleTextList.tsx";
 import * as $$$$$$3 from "./sections/Footer.tsx";
 import * as $$$$$$4 from "./sections/Banners/BannerTextGeneric.tsx";
 import * as $$$$$$5 from "./sections/List/WhyGetInvolved.tsx";
-import * as $$$$$$6 from "./sections/List/Partners.tsx";
-import * as $$$$$$7 from "./sections/Hero.tsx";
-import * as $$$$$$8 from "./sections/AboutDeco.tsx";
-import * as $$$$$$9 from "./sections/ParagraphList.tsx";
+import * as $$$$$$6 from "./sections/List/Benefits.tsx";
+import * as $$$$$$7 from "./sections/List/Partners.tsx";
+import * as $$$$$$8 from "./sections/Hero.tsx";
+import * as $$$$$$9 from "./sections/AboutDeco.tsx";
+import * as $$$$$$10 from "./sections/ParagraphList.tsx";
 import * as $$$$$$$$$$$0 from "./apps/site.ts";
 import * as $$$$$$$$$$$1 from "./apps/decohub.ts";
 
 const manifest = {
   "sections": {
-    "deco-sites/lp-deco/sections/AboutDeco.tsx": $$$$$$8,
+    "deco-sites/lp-deco/sections/AboutDeco.tsx": $$$$$$9,
     "deco-sites/lp-deco/sections/Banners/BannerTextGeneric.tsx": $$$$$$4,
     "deco-sites/lp-deco/sections/Footer.tsx": $$$$$$3,
     "deco-sites/lp-deco/sections/Head.tsx": $$$$$$1,
-    "deco-sites/lp-deco/sections/Hero.tsx": $$$$$$7,
-    "deco-sites/lp-deco/sections/List/Partners.tsx": $$$$$$6,
+    "deco-sites/lp-deco/sections/Hero.tsx": $$$$$$8,
+    "deco-sites/lp-deco/sections/List/Benefits.tsx": $$$$$$6,
+    "deco-sites/lp-deco/sections/List/Partners.tsx": $$$$$$7,
     "deco-sites/lp-deco/sections/List/WhyGetInvolved.tsx": $$$$$$5,
-    "deco-sites/lp-deco/sections/ParagraphList.tsx": $$$$$$9,
+    "deco-sites/lp-deco/sections/ParagraphList.tsx": $$$$$$10,
     "deco-sites/lp-deco/sections/SimpleTextList.tsx": $$$$$$2,
     "deco-sites/lp-deco/sections/Theme.tsx": $$$$$$0,
   },
