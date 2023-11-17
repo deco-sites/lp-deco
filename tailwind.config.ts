@@ -1,3 +1,5 @@
+import daisyui from "daisyui";
+
 const theme = {
   colors: {
     "primary": "hsl(var(--pf))",
@@ -24,5 +26,6 @@ const theme = {
 
 export default {
   theme,
+  plugins: [daisyui],
   content: ["./**/*.tsx"],
 };
