@@ -55,7 +55,7 @@ export default function Benefits(
               {title && (
                 <p class="font-semibold mt-2 md:mt-0 md:text-[28px]">{title}</p>
               )}
-              {description && <p class="text-xs md:text-base">{description}</p>}
+              {description && <p class="text-xs md:text-base min-h-[80px]">{description}</p>}
               {cta?.text && (
                 <a 
                   href={cta?.href ?? "#"} 
