@@ -301,7 +301,7 @@ function Footer({
             <div>
               {_newsletter}
             </div>
-            <div class="flex flex-col md:flex-row gap-10 lg:gap-20 md:justify-between">
+            <div class="flex flex-col md:flex-row gap-10 lg:gap-20">
               {_logo}
               {_sectionLinks}
             </div>
@@ -320,7 +320,7 @@ function Footer({
             <div>
               {_newsletter}
             </div>
-            <div class="flex flex-col md:flex-row gap-10 lg:gap-20 md:justify-between">
+            <div class="flex flex-col md:flex-row gap-10 lg:gap-20">
               <PoweredByDeco />
               {_sectionLinks}
             </div>

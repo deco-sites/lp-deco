@@ -116,7 +116,7 @@ const DEFAULT_PROPS: Props = {
 };
 
 const TestimonalItem = ({ image, text, user }: Testimonial) => (
-  <div class="flex flex-col items-center gap-9 text-center">
+  <div class="flex flex-col items-center gap-9 text-center text-[#000]">
     {image?.src && (
       <Image
         src={image.src}
@@ -125,7 +125,7 @@ const TestimonalItem = ({ image, text, user }: Testimonial) => (
         height={100}
       />
     )}
-    <h3 class="text-xl lg:text-2xl">
+    <h3 class="text-2xl font-bold">
       {text}
     </h3>
     <div class="flex flex-col items-center gap-4">
@@ -141,7 +141,7 @@ const TestimonalItem = ({ image, text, user }: Testimonial) => (
       <div class="flex flex-col">
         {user?.name &&
           (
-            <p class="text-lg">
+            <p class="text-lg font-semibold">
               {user?.name}
             </p>
           )}
@@ -167,7 +167,7 @@ export default function TestimonialsList(
 
   return (
     <div class="bg-[#FFF] w-full h-full">
-      <section class="w-full bg-[#FFF] text-black xl:container mx-auto px-4 py-8 flex flex-col gap-14 lg:gap-20 lg:py-10 lg:px-0">
+      <section class="w-full bg-[#FFF] text-black xl:container mx-auto px-4 py-16 flex flex-col gap-14 lg:gap-20 md:py-24 lg:px-0">
         <Header
           title={title}
           description={description}

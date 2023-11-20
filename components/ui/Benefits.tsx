@@ -35,7 +35,7 @@ export default function Benefits(
 
 
   return (
-    <div class={`w-full ${layout?.background === 'Reverse' ? 'bg-[#0A2121]' : 'bg-[#FFF]'} py-6 md:py-16`}>
+    <div class={`w-full ${layout?.background === 'Reverse' ? 'bg-[#0A2121]' : 'bg-[#FFF]'} py-6 md:py-24`}>
       <div class="xl:container xl:mx-auto mx-5 md:mx-10 flex flex-col items-start justify-center gap-4 md:gap-6">
         <div class="flex justify-start">
           <p class="text-[#02F67C] font-semibold text-[32px] md:text-[40px]">
@@ -49,7 +49,7 @@ export default function Benefits(
           ) => (
             <div
               key={index}
-              class={`flex flex-col justify-start items-start gap-2 md:gap-6 p-6 md:p-10 py-12 md:py-20 ${layout?.background === 'Reverse' ? 'text-[#FFFFFF]' : 'text-[#000]'} rounded-2xl hover:translate-y-4 transition-transform duration-200`}
+              class={`flex flex-col justify-start items-start gap-2 md:gap-6 p-6 md:p-10 ${layout?.background === 'Reverse' ? 'text-[#FFFFFF]' : 'text-[#000]'} rounded-2xl hover:translate-y-4 transition-transform duration-200`}
             >
               {labelIcon && <Icon id={labelIcon ?? ""} size={40} />}
               {title && (

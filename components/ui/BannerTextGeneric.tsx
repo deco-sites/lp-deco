@@ -14,20 +14,22 @@ export interface BannerProps {
   description?: string;
 }
 
+export interface CTAProps {
+  href: string,
+  text: string,
+  label?: AvailableIcons
+  hide?: {
+    label?: boolean
+  }
+}
+
 export interface BannerTextGenericProps {
   title: string;
 
   /** @format html */
   description?: string;
 
-  ctaList?: {
-    href: string,
-    text: string,
-    label?: AvailableIcons
-    hide?: {
-      label?: boolean
-    }
-  }[]
+  ctaList?: CTAProps[]
 
   banners?: BannerProps[]
 
@@ -79,8 +81,8 @@ export default function BannerTextGeneric(
     'Column reverse': 'flex flex-col-reverse items-center'
   }
 
-  const cta = ({ href, text, label, hide }: {href: string, text: string, label?: AvailableIcons }) => hide?.cta ? <></> : (
-      <a href={href ?? "#"} class={`btn px-6 py-3  ${!hide?.label ? 'pr-3' : 'pr-5'} rounded-lg transition-colors duration-200 flex items-center ${BACKGROUND_CTA[layout?.variants?.cta ?? "Normal"]}`}>
+  const cta = ({ href, text, label, hide }: CTAProps) => hide?.cta ? <></> : (
+      <a href={href ?? "#"} class={`btn px-6 py-3  ${!hide?.label ? 'pr-3' : 'pr-4'} rounded-lg transition-colors duration-200 flex items-center ${BACKGROUND_CTA[layout?.variants?.cta ?? "Normal"]}`}>
         <span class="h-full flex justify-center items-center">
           {text}
         </span>
@@ -93,7 +95,7 @@ export default function BannerTextGeneric(
     <div class={`flex gap-4
       ${layout?.alignment === 'Column reverse' ? 'flex flex-col md:flex-row justify-stretch md:justify-around md:items-center gap-12' : 'flex flex-col gap-12'}
     `}>
-        <p class={`font-semibold text-[40px] md:text-[56px] w-full
+        <p class={`font-semibold text-[40px] md:text-[48px] w-full
           ${layout?.variants?.section === 'Reverse' ? 'text-[#FFFFFF]' : 'text-[#181212]'} 
           ${layout?.alignment === 'Column' ? 'text-center' : 'text-center md:text-start'}
         `}>

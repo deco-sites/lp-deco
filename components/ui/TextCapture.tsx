@@ -11,7 +11,7 @@ export interface TextCaptureProps {
 
 export default function TextCapture({ text, cta }: TextCaptureProps) {
   return (
-    <div class="bg-[#FFF] py-8 md:py-10">
+    <div class="bg-[#FFF] py-16 md:py-24">
       <section class="xl:container mx-auto flex flex-col items-center justify-center gap-8">
         <h1 class="text-center text-[32px] md:text-[48px] font-bold text-[#181212]">{text}</h1>
         <div class="flex gap-4">
