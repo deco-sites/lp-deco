@@ -128,15 +128,15 @@ export default function Banner({
               </Picture>
               {action && (
                 <div class="absolute h-min m-auto flex flex-col gap-4 p-4 rounded justify-center items-center">
-                  <span class="text-6xl font-bold text-base-100">
+                  <span class="text-[56px] font-bold text-base-100">
                     {action?.title}
                   </span>
-                  <span class="font-medium text-xl text-base-100">
+                  <span class="text-[18px] text-base-100">
                     {action?.subTitle}
                   </span>
                   <div class="flex gap-4">
-                    <Button class="bg-[#000] text-[#FFF] hover:bg-[#FFF] hover:text-[#000] border-[#181212] rounded-md">{action.label}</Button>
-                    <Button class="bg-transparent text-[#FFF] hover:bg-[#000] hover:text-[#FFF] border-[#FFF] hover:border-[#181212] rounded-md">{action.label}</Button>
+                    <Button class="bg-[#000] text-[#FFF] hover:bg-[#FFF] hover:text-[#000] border-[#181212]">{action.label}</Button>
+                    <Button class="bg-transparent text-[#FFF] hover:bg-[#000] hover:text-[#FFF] border-[#FFF] hover:border-[#181212]">{action.label}</Button>
                   </div>
                 </div>
               )}
