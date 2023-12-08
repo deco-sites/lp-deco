@@ -71,7 +71,7 @@ function Newsletter(
             />
             <button
               type="submit"
-              class="btn bg-[#FFF] text-[#000] border border-[#181212] hover:bg-[#000] hover:text-[#FFF]"
+              class="btn normal-case bg-[#FFF] text-[#000] border border-[#181212] hover:bg-[#000] hover:text-[#FFF]"
               disabled={loading}
             >
               {content?.form?.buttonText || "Inscrever"}

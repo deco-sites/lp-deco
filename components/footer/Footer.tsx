@@ -326,8 +326,8 @@ function Footer({
             </div>
             <Divider />
             <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10 md:items-center">
-              <p>© 2023 Deco.cx. All rights reserved.</p>
-              <div class="flex flex-col md:flex-row gap-10 md:items-center">
+              <div class="flex flex-col md:flex-row gap-10 md:items-center text-sm">
+                <p>© 2023 Deco.cx. All rights reserved.</p>
                 {_links}
               </div>
               {_socialFooter}
