@@ -41,7 +41,7 @@ export interface BannerTextGenericProps {
 
   layout?: {
     alignment?: 'Row' | 'Column' | 'Row reverse' | 'Column reverse',
-    image?: 'Backgrond' | 'Front',
+    image?: 'Background' | 'Front',
     variants?: { 
       section?: 'Normal' | 'Reverse'
     }
@@ -120,9 +120,8 @@ export default function BannerTextGeneric(
   return (
     <section class={`${ layout?.variants?.section === 'Reverse' ? 'bg-[#0A2121]' : 'bg-[#FFF]' } w-full py-10 md:py-24`}>
       <div
-        class={`relative z-0 h-full`}>
-
-        { layout?.image === 'Backgrond' && banners?.length ? <Image width={400} height={380} src={banners[0]?.desktop} class="w-full h-full object-cover absolute z-[-1]" /> : null}
+        class={`relative z-0 ${layout?.image === 'Background' && banners?.length ? 'h-[900px]' : 'h-full'}`}>
+        { layout?.image === 'Background' && banners?.length ? <Image width={400} height={380} src={banners[0]?.desktop ?? ""} class="w-full h-full object-cover absolute z-[-1]" /> : null}
 
         <div class={`xl:container xl:mx-auto mx-5 md:mx-10 ${ALIGNMENT_CONTAINER[layout?.alignment ?? "Column"]} gap-12 md:gap-16 items-center justify-center`}>
           <div />
@@ -130,7 +129,7 @@ export default function BannerTextGeneric(
             {textContainer}
           </div>
           <div class={`w-full ${ALIGNMENT_LAST_CHILD[layout?.alignment ?? "Column"]}`}>
-            { layout?.image === 'Backgrond' ? null : banners?.length === 1 ? (
+            { layout?.image === 'Background' ? null : banners?.length === 1 ? (
               <div>
                 <Picture>
                   <Source
@@ -169,7 +168,7 @@ export default function BannerTextGeneric(
                   </div>
                 ) : null }
               </div>
-          ) : (
+          ) : ( 
               <BannerCarousel images={banners}  />
             )}
           </div>
