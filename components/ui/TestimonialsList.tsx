@@ -141,13 +141,13 @@ const TestimonalItem = ({ image, text, user }: Testimonial) => (
       <div class="flex flex-col">
         {user?.name &&
           (
-            <p class="text-lg font-semibold">
+            <p class="font-semibold">
               {user?.name}
             </p>
           )}
         {(user?.position || user?.company) &&
           (
-            <p class="text-lg">
+            <p>
               {user?.position}, {user?.company}
             </p>
           )}

@@ -53,14 +53,14 @@ export default function Benefits(
             >
               {labelIcon && <Icon id={labelIcon ?? ""} size={40} />}
               {title && (
-                <p class="font-semibold mt-2 md:mt-0 md:text-[28px]">{title}</p>
+                <p class="font-bold mt-2 md:mt-0 md:text-[24px]">{title}</p>
               )}
               {description && <p class="text-xs md:text-base min-h-[80px]">{description}</p>}
               {cta?.text && (
                 <a 
                   href={cta?.href ?? "#"} 
-                  class={`${background_cta('Normal')[cta?.variant]} btn px-6 py-3 ${!cta?.hide?.label ? 'pr-3' : 'pr-5'} 
-                  rounded-lg transition-colors duration-200 flex items-center`}
+                  class={`${background_cta('Normal')[cta?.variant]} btn text-base normal-case px-6 py-3 ${!cta?.hide?.label ? 'pr-3' : 'pr-5'} 
+                  transition-colors duration-200 flex items-center`}
                 >
                   <span class="h-full flex justify-center items-center">
                     {cta?.text}
