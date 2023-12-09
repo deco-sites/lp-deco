@@ -69,9 +69,9 @@ export default function BannerTextGeneric(
     }
 
   const BACKGROUND_CTA = {
-    'Reverse': 'bg-[#FFF] text-[#000] border border-[#181212] hover:bg-[#000] hover:text-[#FFF]',
+    'Reverse': 'bg-[#FFF] text-[#000] border border-[#181212] hover:bg-[#C9CFCF]',
     'Normal': 'bg-[#000] text-[#FFF] border border-[#181212] hover:bg-[#FFF] hover:text-[#181212]',
-    'Border none': `bg-transparent ${layout?.variants?.section === 'Reverse' ? 'text-[#FFF] hover:bg-[#FFF] hover:text-[#181212]' : 'text-[#181212] hover:bg-[#000] hover:text-[#FFF]'} border-none`
+    'Border none': `bg-transparent hover:bg-transparent px-0 ${layout?.variants?.section === 'Reverse' ? 'text-[#FFF] hover:underline' : 'text-[#181212] hover:underline'} border-none`
   }
 
   const ALIGNMENT_CONTAINER = {
@@ -82,7 +82,7 @@ export default function BannerTextGeneric(
   }
 
   const cta = ({ href, text, label, hide, variants }: CTAProps) => hide?.cta ? <></> : (
-      <a href={href ?? "#"} class={`btn normal-case text-base px-6 py-3  ${!hide?.label ? 'pr-3' : 'pr-4'} transition-colors duration-200 flex items-center gap-2 ${BACKGROUND_CTA[variants ?? "Normal"]}`}>
+      <a href={href ?? "#"} class={`btn normal-case rounded-none text-base px-6 py-3  ${!hide?.label ? 'pr-3' : 'pr-4'} transition-colors duration-200 flex items-center gap-2 ${BACKGROUND_CTA[variants ?? "Normal"]}`}>
         <span class="h-full flex justify-center items-center">
           {text}
         </span>

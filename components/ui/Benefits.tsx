@@ -24,9 +24,9 @@ export interface CardProps {
 }
 
 const background_cta = (variant: "Normal" | "Reverse") => ({
-  'Reverse': 'bg-[#FFF] text-[#000] border border-[#181212] hover:bg-[#000] hover:text-[#FFF]',
-  'Normal': 'bg-[#000] text-[#FFF] border border-[#181212] hover:bg-[#FFF] hover:text-[#181212]',
-  'Border none': `bg-transparent ${variant === 'Reverse' ? 'text-[#FFF] hover:bg-[#FFF] hover:text-[#181212]' : 'text-[#181212] hover:bg-[#000] hover:text-[#FFF]'} border-none`
+  'Reverse': 'bg-[#FFF] text-[#000] border border-[#181212] hover:bg-[#C9CFCF] px-6',
+  'Normal': 'bg-[#000] text-[#FFF] border border-[#181212] hover:bg-[#FFF] hover:text-[#181212] px-6',
+  'Border none': `bg-transparent hover:bg-transparent px-0 ${variant === 'Reverse' ? 'text-[#FFF] hover:underline' : 'text-[#181212] hover:underline'} border-none`
 })
 
 export default function Benefits(
@@ -59,7 +59,7 @@ export default function Benefits(
               {cta?.text && (
                 <a 
                   href={cta?.href ?? "#"} 
-                  class={`${background_cta('Normal')[cta?.variant]} btn text-base normal-case px-6 py-3 ${!cta?.hide?.label ? 'pr-3' : 'pr-5'} 
+                  class={`${background_cta('Normal')[cta?.variant]} btn rounded-none text-base normal-case py-3 ${!cta?.hide?.label ? 'pr-3' : 'pr-5'} 
                   transition-colors duration-200 flex items-center`}
                 >
                   <span class="h-full flex justify-center items-center">

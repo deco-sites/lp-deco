@@ -17,7 +17,7 @@ const Button = forwardRef<HTMLButtonElement, Props>(({
 }, ref) => (
   <button
     {...props}
-    className={`btn no-animation normal-case text-base font-normal ${_class}`}
+    className={`btn rounded-none no-animation normal-case text-base font-normal ${_class}`}
     disabled={disabled || loading}
     type={type}
     ref={ref}
