@@ -69,7 +69,7 @@ export default function BannerTextGeneric(
     }
 
   const BACKGROUND_CTA = {
-    'Reverse': 'bg-[#FFF] text-[#000] border border-[#181212] hover:bg-[#C9CFCF]',
+    'Reverse': 'bg-[#FFF] text-[#000] border border-[#C9CFCF] hover:bg-[#C9CFCF] hover:border-[#C9CFCF]',
     'Normal': 'bg-[#000] text-[#FFF] border border-[#181212] hover:bg-[#FFF] hover:text-[#181212]',
     'Border none': `bg-transparent hover:bg-transparent px-0 ${layout?.variants?.section === 'Reverse' ? 'text-[#FFF] hover:underline' : 'text-[#181212] hover:underline'} border-none`
   }
@@ -120,7 +120,7 @@ export default function BannerTextGeneric(
   return (
     <section class={`${ layout?.variants?.section === 'Reverse' ? 'bg-[#0A2121]' : 'bg-[#FFF]' } w-full py-10 md:py-24`}>
       <div
-        class={`relative z-0 ${layout?.image === 'Background' && banners?.length ? 'h-[900px]' : 'h-full'}`}>
+        class={`relative z-0 ${layout?.image === 'Background' && banners?.length ? 'h-[900px] flex justify-center items-center' : 'h-full'}`}>
         { layout?.image === 'Background' && banners?.length ? <Image width={400} height={380} src={banners[0]?.desktop ?? ""} class="w-full h-full object-cover absolute z-[-1]" /> : null}
 
         <div class={`xl:container xl:mx-auto mx-5 md:mx-10 ${ALIGNMENT_CONTAINER[layout?.alignment ?? "Column"]} gap-12 md:gap-16 items-center justify-center`}>

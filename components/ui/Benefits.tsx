@@ -24,7 +24,7 @@ export interface CardProps {
 }
 
 const background_cta = (variant: "Normal" | "Reverse") => ({
-  'Reverse': 'bg-[#FFF] text-[#000] border border-[#181212] hover:bg-[#C9CFCF] px-6',
+  'Reverse': 'bg-[#FFF] text-[#000] border border-[#C9CFCF] hover:bg-[#C9CFCF] px-6',
   'Normal': 'bg-[#000] text-[#FFF] border border-[#181212] hover:bg-[#FFF] hover:text-[#181212] px-6',
   'Border none': `bg-transparent hover:bg-transparent px-0 ${variant === 'Reverse' ? 'text-[#FFF] hover:underline' : 'text-[#181212] hover:underline'} border-none`
 })
@@ -55,7 +55,7 @@ export default function Benefits(
               {title && (
                 <p class="font-bold mt-2 md:mt-0 md:text-[24px]">{title}</p>
               )}
-              {description && <p class="text-xs md:text-base min-h-[80px]">{description}</p>}
+              {description && <p class="text-xs md:text-base md:min-h-[100px]">{description}</p>}
               {cta?.text && (
                 <a 
                   href={cta?.href ?? "#"} 

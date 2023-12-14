@@ -136,7 +136,7 @@ export default function Banner({
                   </span>
                   <div class="flex gap-4">
                     <Button class="bg-[#000] text-[#FFF] hover:bg-[#FFF] hover:text-[#000] border-[#181212]">{action.label}</Button>
-                    <Button class="bg-transparent text-[#FFF] hover:bg-transparent hover:underline border-[#FFF]">{action.label}</Button>
+                    <Button class="bg-transparent text-[#FFF] hover:text-[#000] hover:bg-[#EFF0F0] hover:border-[#C9CFCF] border-[#FFF]">{action.label}</Button>
                   </div>
                 </div>
               )}
