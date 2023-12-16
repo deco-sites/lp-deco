@@ -43,10 +43,10 @@ function Partners(props: Props) {
   );
 
   return (
-    <div class="w-full bg-[#FFF] py-10 md:py-24">
+    <div class="w-full bg-[#FFF] pb-16">
       <div class="xl:container xl:mx-auto mx-5 md:mx-10 flex flex-col gap-10 lg:gap-16">
         {title && (
-          <p class="text-[#000] text-[36px] font-bold text-center">{title}</p>
+          <p class="text-[#000] text-[18px] font-bold text-center">{title}</p>
         )}
 
         <div class="w-full text-center items-center relative">
@@ -57,14 +57,14 @@ function Partners(props: Props) {
                   index > 0 && index < list.length - 1 ? "py-6" : "py-2"
                 } items-center gap-24`}
                 style={`animation-delay: ${300 * index}ms`}
-                >
+              >
                 {colImages.map((item: Image) => (
                   <img
-                  key={index}
-                  src={item.image}
-                  alt={item.altText || ""}
+                    key={index}
+                    src={item.image}
+                    alt={item.altText || ""}
                   />
-                  ))}
+                ))}
               </div>
             ))}
           </div>

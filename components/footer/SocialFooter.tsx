@@ -1,5 +1,5 @@
 import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
-import type { BottomFooterProps } from "$store/components/footer/Footer.tsx"
+import type { BottomFooterProps } from "$store/components/footer/Footer.tsx";
 
 export default function SocialFooter(
   { links }: BottomFooterProps,

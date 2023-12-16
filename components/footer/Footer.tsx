@@ -47,7 +47,7 @@ export interface Layout {
     | "Variation 6";
   hide?: {
     logo?: boolean;
-    socialFooter?: boolean
+    socialFooter?: boolean;
     sectionLinks?: boolean;
     extraLinks?: boolean;
     newsletter?: boolean;
@@ -61,14 +61,13 @@ export interface NewsletterForm {
   helpText?: string;
 }
 
-
 export interface FooterProps {
   labelIcon: AvailableIcons;
   href: string;
 }
 
 export interface BottomFooterProps {
-  links: FooterProps[]
+  links: FooterProps[];
 }
 
 export interface Props {
@@ -126,53 +125,53 @@ function Footer({
     {
       label: "Column One",
       items: [
-        { label: 'Link One', href: "#" },
-        { label: 'Link Two', href: '#' },
-        { label: 'Link Three', href: '#' },
-        { label: 'Link Four', href: '#' },
-        { label: 'Link Five', href: '#' }
-      ]
+        { label: "Link One", href: "#" },
+        { label: "Link Two", href: "#" },
+        { label: "Link Three", href: "#" },
+        { label: "Link Four", href: "#" },
+        { label: "Link Five", href: "#" },
+      ],
     },
     {
-      label: 'Column Two',
+      label: "Column Two",
       items: [
-        { label: 'Link One', href: '#' },
-        { label: 'Link Two', href: '#' },
-        { label: 'Link Three', href: '#' },
-        { label: 'Link Four', href: '#' },
-        { label: 'Link Five', href: '#' }
-      ]
+        { label: "Link One", href: "#" },
+        { label: "Link Two", href: "#" },
+        { label: "Link Three", href: "#" },
+        { label: "Link Four", href: "#" },
+        { label: "Link Five", href: "#" },
+      ],
     },
     {
       label: "Column Three",
       items: [
-        { label: 'Link One', href: "#" },
-        { label: 'Link Two', href: '#' },
-        { label: 'Link Three', href: '#' },
-        { label: 'Link Four', href: '#' },
-        { label: 'Link Five', href: '#' }
-      ]
+        { label: "Link One", href: "#" },
+        { label: "Link Two", href: "#" },
+        { label: "Link Three", href: "#" },
+        { label: "Link Four", href: "#" },
+        { label: "Link Five", href: "#" },
+      ],
     },
     {
-      label: 'Column Four',
+      label: "Column Four",
       items: [
-        { label: 'Link One', href: '#' },
-        { label: 'Link Two', href: '#' },
-        { label: 'Link Three', href: '#' },
-        { label: 'Link Four', href: '#' },
-        { label: 'Link Five', href: '#' }
-      ]
+        { label: "Link One", href: "#" },
+        { label: "Link Two", href: "#" },
+        { label: "Link Three", href: "#" },
+        { label: "Link Four", href: "#" },
+        { label: "Link Five", href: "#" },
+      ],
     },
     {
       label: "Column Five",
       items: [
-        { label: 'Link One', href: "#" },
-        { label: 'Link Two', href: '#' },
-        { label: 'Link Three', href: '#' },
-        { label: 'Link Four', href: '#' },
-        { label: 'Link Five', href: '#' }
-      ]
-    }
+        { label: "Link One", href: "#" },
+        { label: "Link Two", href: "#" },
+        { label: "Link Three", href: "#" },
+        { label: "Link Four", href: "#" },
+        { label: "Link Five", href: "#" },
+      ],
+    },
   ],
   social = { links: [] },
   extraLinks = [],
@@ -206,9 +205,9 @@ function Footer({
         layout?.variation == "Variation 3"}
     />
   );
-  const _socialFooter = layout?.hide?.socialFooter ? <></> : (
-    <SocialFooter links={social?.links}  />
-  )
+  const _socialFooter = layout?.hide?.socialFooter
+    ? <></>
+    : <SocialFooter links={social?.links} />;
   const _links = layout?.hide?.extraLinks
     ? <></>
     : <ExtraLinks content={extraLinks} />;
@@ -229,7 +228,7 @@ function Footer({
             <Divider />
             <div class="flex flex-col md:flex-row gap-10 md:gap-14 md:items-end">
               <div class="flex flex-col lg:flex-row gap-10 lg:gap-14 lg:items-end">
-              {_socialFooter}
+                {_socialFooter}
               </div>
             </div>
             <Divider />
@@ -282,10 +281,10 @@ function Footer({
               {_sectionLinks}
               <div class="flex flex-col md:flex-row lg:flex-col gap-10 lg:gap-10 lg:w-2/5 lg:pl-10">
                 <div class="flex flex-col gap-10 lg:gap-10">
-                <div class="flex flex-col md:flex-row gap-10 md:items-center">
-                  {_links}
-                </div>
-                {_socialFooter}
+                  <div class="flex flex-col md:flex-row gap-10 md:items-center">
+                    {_links}
+                  </div>
+                  {_socialFooter}
                 </div>
               </div>
             </div>

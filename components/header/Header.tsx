@@ -46,9 +46,7 @@ function Header({
   return (
     <header style={{ minHeight: "93px" }}>
       <Drawers menu={{ items: navItems, logo }}>
-        <div
-          class="bg-[#FFF] fixed w-full z-50 h-[54px] md:h-[95px]"
-        >
+        <div class="bg-[#FFF] fixed w-full z-50 h-[95px]">
           <div>
             <Navbar items={navItems} logo={logo} hrefLogin={hrefLogin} />
           </div>

@@ -29,12 +29,13 @@ export interface Props {
   interval?: number;
 }
 
-function BannerItem({ banner: { mobile = "", desktop = "", title = "", description = "" } }: { banner: Banner }) {
-
+function BannerItem(
+  { banner: { mobile = "", desktop = "", title = "", description = "" } }: {
+    banner: Banner;
+  },
+) {
   return (
-    <div
-      class="overflow-y-hidden w-full flex flex-col"
-    >
+    <div class="overflow-y-hidden w-full flex flex-col">
       <Picture preload={false}>
         <Source
           media="(max-width: 767px)"
@@ -54,16 +55,18 @@ function BannerItem({ banner: { mobile = "", desktop = "", title = "", descripti
           alt={title ?? ""}
         />
       </Picture>
-      {title || description ? (
-        <div class="flex flex-col items-start gap-4 w-full bg-[#f2f2f2] px-4 pt-8 pb-20 md:px-6 md:pt-10 md:pb-24">
-          <span class="text-xl lg:text-2xl font-semibold text-[#0A2121] w-full">
-            {title}
-          </span>
-          <span class="w-full text-[#0A2121]">
-            {description}
-          </span>
-        </div>
-      ) : null}
+      {title || description
+        ? (
+          <div class="flex flex-col items-start gap-4 w-full bg-[#f2f2f2] px-4 pt-8 pb-20 md:px-6 md:pt-10 md:pb-24">
+            <span class="text-xl lg:text-2xl font-semibold text-[#0A2121] w-full">
+              {title}
+            </span>
+            <span class="w-full text-[#0A2121]">
+              {description}
+            </span>
+          </div>
+        )
+        : null}
     </div>
   );
 }
@@ -132,7 +135,7 @@ function BannerCarousel(props: Props) {
   const id = useId();
 
   if (images?.length === 0) {
-    return <div />
+    return <div />;
   }
 
   return (
@@ -152,7 +155,6 @@ function BannerCarousel(props: Props) {
 
         <Dots images={images} interval={interval} />
       </div>
-
 
       <SliderJS rootId={id} interval={interval && interval * 1e3} infinite />
     </div>

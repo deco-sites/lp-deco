@@ -17,7 +17,7 @@ export default function HeadComponent({
   imageUrl = "https://deco.cx/images/deco-logo-light.png",
   faviconUrl = "",
   styleUrls = [],
-  themeColor = "#003232",
+  themeColor = "#FFF",
 }: Props) {
   return (
     <Head>
@@ -46,13 +46,13 @@ export default function HeadComponent({
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
       </link>
       <link rel="manifest" href="/site.webmanifest"></link>
-      <link rel="mask-icon" href="/safari-pinned-tab.svg" data-color="#003232">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" data-color="#FFF">
       </link>
       <link rel="preconnect" href="https://fonts.googleapis.com"></link>
       <link rel="preconnect" href="https://fonts.gstatic.com">
       </link>
-      <meta name="theme-color" content="#003232"></meta>
-      <meta name="msapplication-TileColor" content="#003232"></meta>
+      <meta name="theme-color" content="#FFF"></meta>
+      <meta name="msapplication-TileColor" content="#FFF"></meta>
       {styleUrls?.map((styleUrl: string) => (
         <link rel="stylesheet" href={asset(styleUrl)}></link>
       ))}

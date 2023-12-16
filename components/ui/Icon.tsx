@@ -39,7 +39,11 @@ export type AvailableIcons =
   | "Discord"
   | "Trash"
   | "FilterList"
-  | "WhatsApp";
+  | "WhatsApp"
+  | "PigMoney"
+  | "MailBox"
+  | "AdjustmentsHorizontal"
+  | "Star";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

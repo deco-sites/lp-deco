@@ -20,7 +20,6 @@ export interface Testimonial {
   };
 }
 
-
 function Dots({ images, interval = 0 }: Props) {
   return (
     <>

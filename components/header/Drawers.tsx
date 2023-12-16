@@ -56,6 +56,8 @@ const Aside = (
 function Drawers({ menu, children }: Props) {
   const { displayMenu } = useUI();
 
+  if (!menu) return null;
+
   return (
     <Drawer // left drawer
       open={displayMenu.value}
