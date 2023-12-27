@@ -1,14 +1,24 @@
+import Container, { Props as ContainerProps } from "$store/components/ui/Container.tsx";
 import Icon, { AvailableIcons } from "./Icon.tsx";
+import {
+  textColorClasses,
+  TextColors,
+} from "$store/components/ui/Types.tsx";
+
 export interface BenefitsProps {
   titleSection?: string;
   cards?: CardProps[];
   layout?: {
     background: "Normal" | "Reverse";
   };
+  container?: ContainerProps;
 }
 
 export interface CardProps {
-  labelIcon?: AvailableIcons;
+  icon?: {
+    img?: AvailableIcons;
+    color?: TextColors;
+  }
   title?: string;
   description?: string;
   cta?: {
@@ -35,34 +45,32 @@ const background_cta = (variant: "Normal" | "Reverse") => ({
 });
 
 export default function Benefits(
-  { titleSection, cards, layout }: BenefitsProps,
+  { titleSection, cards, layout, container }: BenefitsProps,
 ) {
   return (
-    <div
-      class={`w-full ${
-        layout?.background === "Reverse" ? "bg-[#0A2121]" : "bg-[#FAFAFA]"
-      } py-6 md:py-24`}
-    >
-      <div class="xl:container xl:mx-auto mx-5 md:mx-10 flex flex-col items-start justify-center gap-4 md:gap-6">
+    <Container {...container}>
+      <div class="flex flex-col items-start justify-center gap-4 md:gap-6">
         <div class="flex justify-start">
-          <p class="text-[#02F67C] font-semibold text-[32px] md:text-[40px]">
+          <p class="font-semibold text-[32px] md:text-[40px]">
             {titleSection}
           </p>
         </div>
         <div class="grid flex-row wrap justify-center gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {cards?.map((
-            { labelIcon, title, description, cta }: CardProps,
+            { icon, title, description, cta }: CardProps,
             index: number,
           ) => (
             <div
               key={index}
               class={`flex flex-col justify-start items-start gap-2 md:gap-6 p-6 md:p-10 ${
                 layout?.background === "Reverse"
-                  ? "text-[#FFFFFF]"
-                  : "text-[#000]"
+                  ? ""
+                  : ""
               } rounded-2xl transition-transform duration-200`}
             >
-              {labelIcon && <Icon id={labelIcon ?? ""} size={40} />}
+              <div class={textColorClasses[icon?.color || "Base"]}>
+                {icon?.img && <Icon id={icon.img ?? ""} size={40} />}
+              </div>
               {title && (
                 <p class="font-bold mt-2 md:mt-0 md:text-[24px]">{title}</p>
               )}
@@ -95,6 +103,6 @@ export default function Benefits(
           ))}
         </div>
       </div>
-    </div>
+    </Container>
   );
 }

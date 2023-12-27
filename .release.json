@@ -1,0 +1,1683 @@
+{
+  "decohub": {
+    "__resolveType": "deco-sites/lp-deco/apps/decohub.ts"
+  },
+  "admin-app": {
+    "resolvables": {
+      "__resolveType": "deco-sites/admin/loaders/state.ts"
+    },
+    "__resolveType": "decohub/apps/admin.ts"
+  },
+  "everyone": {
+    "routes": [],
+    "__resolveType": "$live/flags/everyone.ts"
+  },
+  "Home - Start": {
+    "seo": {
+      "type": "website",
+      "image": "https://www.deco.cx/decocx-meta-en.png",
+      "title": "Start by deco.cx",
+      "themeColor": "#FFF",
+      "description": "This is a site template for deco.cx",
+      "titleTemplate": "%s | Start by deco.cx",
+      "descriptionTemplate": "%s | Deco.cx"
+    },
+    "global": [],
+    "routes": [
+      {
+        "__resolveType": "website/loaders/pages.ts"
+      }
+    ],
+    "__resolveType": "deco-sites/lp-deco/apps/site.ts"
+  },
+  "pages-home-start-5cae41e3d348": {
+    "name": "Home - Start",
+    "path": "/backup",
+    "sections": [
+      {
+        "type": "website",
+        "image": "https://www.deco.cx/decocx-meta-en.png",
+        "title": "Start by deco.cx",
+        "description": "This is a site template for deco.cx",
+        "__resolveType": "website/sections/Seo/Seo.tsx",
+        "titleTemplate": "%s | Start by deco.cx"
+      },
+      {
+        "logo": {
+          "alt": "",
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/7a208131-385c-4211-a470-c127fa1edbfb"
+        },
+        "navItems": [
+          {
+            "href": "#",
+            "label": "Link One"
+          },
+          {
+            "href": "#",
+            "label": "Link Two"
+          },
+          {
+            "href": "#",
+            "label": "Link Three"
+          },
+          {
+            "href": "#",
+            "label": "Link Four"
+          }
+        ],
+        "__resolveType": "deco-sites/lp-deco/sections/Header.tsx"
+      },
+      {
+        "banners": [
+          {
+            "alt": "Banner",
+            "action": {
+              "href": "#",
+              "label": "Button",
+              "title": "Lorem Ipsum",
+              "subTitle": "Lorem ipsum dolor sit amet consectetur. Placerat ornare diam nulla fringilla gravida justo elementum. Ut sed in."
+            },
+            "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/17a9fc0b-b540-43e7-a1c1-be67dfe4ada0",
+            "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/3f323c06-2e64-4f83-ab58-bf591985de21"
+          }
+        ],
+        "fullWidth": false,
+        "borderRadius": {
+          "mobile": "none",
+          "desktop": "none"
+        },
+        "__resolveType": "deco-sites/lp-deco/sections/Banners/Banner.tsx"
+      },
+      {
+        "title": "Lorem ipsum dolor sit amet consectetur.",
+        "rowImages": [
+          {
+            "colImages": [
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                "altText": "Deco"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/7480dd17-8e63-4d41-891e-8f0b8b55fbf4",
+                "altText": "Zee.dog"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                "altText": "Deco"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/7480dd17-8e63-4d41-891e-8f0b8b55fbf4",
+                "altText": "Zee.dog"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                "altText": "Deco"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/7480dd17-8e63-4d41-891e-8f0b8b55fbf4",
+                "altText": "Zee.dog"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                "altText": "Deco"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/7480dd17-8e63-4d41-891e-8f0b8b55fbf4",
+                "altText": "Zee.dog"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                "altText": "Deco"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/7480dd17-8e63-4d41-891e-8f0b8b55fbf4",
+                "altText": "Zee.dog"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                "altText": "Deco"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/7480dd17-8e63-4d41-891e-8f0b8b55fbf4",
+                "altText": "Zee.dog"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                "altText": "Deco"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/7480dd17-8e63-4d41-891e-8f0b8b55fbf4",
+                "altText": "Zee.dog"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                "altText": "Deco"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/7480dd17-8e63-4d41-891e-8f0b8b55fbf4",
+                "altText": "Zee.dog"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                "altText": "Deco"
+              },
+              {
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/7480dd17-8e63-4d41-891e-8f0b8b55fbf4",
+                "altText": "Zee.dog"
+              }
+            ]
+          }
+        ],
+        "__resolveType": "deco-sites/lp-deco/sections/List/Partners.tsx"
+      },
+      {
+        "text": "Lorem ipsum dolor sit amet consectetur. Placerat ornare diam nulla fringilla gravida justo elementum. Ut sed in.",
+        "alignment": "Left",
+        "__resolveType": "deco-sites/lp-deco/sections/Intro.tsx"
+      },
+      {
+        "cards": [
+          {
+            "cta": {
+              "hide": {
+                "label": false
+              },
+              "href": "#",
+              "text": "Button",
+              "label": "ArrowRight",
+              "variant": "Border none"
+            },
+            "title": "Medium length section heading goes here",
+            "labelIcon": "Box",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+          },
+          {
+            "cta": {
+              "hide": {
+                "label": false
+              },
+              "href": "#",
+              "text": "Button",
+              "label": "ArrowRight",
+              "variant": "Border none"
+            },
+            "title": "Medium length section heading goes here",
+            "labelIcon": "Box",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+          },
+          {
+            "cta": {
+              "hide": {
+                "label": false
+              },
+              "href": "#",
+              "text": "Button",
+              "label": "ArrowRight",
+              "variant": "Border none"
+            },
+            "title": "Medium length section heading goes here",
+            "labelIcon": "Box",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+          },
+          {
+            "cta": {
+              "hide": {
+                "label": false
+              },
+              "href": "#",
+              "text": "Button",
+              "label": "ArrowRight",
+              "variant": "Border none"
+            },
+            "title": "Medium length section heading goes here",
+            "labelIcon": "Box",
+            "description": "Lorem ipsum"
+          }
+        ],
+        "titleSection": "",
+        "__resolveType": "deco-sites/lp-deco/sections/List/Benefits.tsx"
+      },
+      {
+        "hide": {
+          "cta": false
+        },
+        "image": {
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+        },
+        "title": "Medium length section heading goes here",
+        "layout": {
+          "image": "Front",
+          "variants": {
+            "cta": "Reverse",
+            "section": "Normal"
+          },
+          "alignment": "Row"
+        },
+        "banners": [
+          {
+            "image": {
+              "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+              "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+            },
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/c946cdb0-c45f-4181-9dfd-0b3d45eb1e9c",
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/1d36b196-a4bd-41a5-b807-614c1cb1721f"
+          }
+        ],
+        "ctaList": [
+          {
+            "hide": {
+              "label": true
+            },
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Reverse"
+          },
+          {
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Border none"
+          }
+        ],
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>",
+        "__resolveType": "deco-sites/lp-deco/sections/Banners/BannerTextGeneric.tsx"
+      },
+      {
+        "hide": {
+          "cta": false
+        },
+        "image": {
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+        },
+        "title": "Medium length section heading goes here",
+        "layout": {
+          "image": "Front",
+          "variants": {
+            "cta": "Normal",
+            "section": "Normal"
+          },
+          "alignment": "Column"
+        },
+        "banners": [
+          {
+            "image": {
+              "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+              "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+            },
+            "title": "Lorem ipsum",
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/2835e32a-14bd-4c92-bc34-a410180b9b79",
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/4714f3b1-abf3-4480-b42c-c9b09712d06e",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique"
+          }
+        ],
+        "ctaList": [
+          {
+            "hide": {
+              "label": true
+            },
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Reverse"
+          },
+          {
+            "hide": {
+              "label": false
+            },
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Border none"
+          }
+        ],
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>",
+        "__resolveType": "deco-sites/lp-deco/sections/Banners/BannerTextGeneric.tsx"
+      },
+      {
+        "hide": {
+          "cta": false
+        },
+        "image": {
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+        },
+        "title": "Medium length section heading goes here",
+        "layout": {
+          "image": "Background",
+          "variants": {
+            "cta": "Normal",
+            "section": "Normal"
+          },
+          "alignment": "Column"
+        },
+        "banners": [
+          {
+            "image": {
+              "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+              "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+            },
+            "title": "Lorem ipsum",
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/2835e32a-14bd-4c92-bc34-a410180b9b79",
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/4714f3b1-abf3-4480-b42c-c9b09712d06e",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique"
+          }
+        ],
+        "ctaList": [
+          {
+            "hide": {
+              "label": true
+            },
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Reverse"
+          },
+          {
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Border none"
+          }
+        ],
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>",
+        "__resolveType": "deco-sites/lp-deco/sections/Banners/BannerTextGeneric.tsx"
+      },
+      {
+        "hide": {
+          "cta": false
+        },
+        "image": {
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+        },
+        "title": "Medium length section heading goes here",
+        "layout": {
+          "image": "Front",
+          "variants": {
+            "cta": "Reverse",
+            "section": "Normal"
+          },
+          "alignment": "Row reverse"
+        },
+        "banners": [
+          {
+            "image": {
+              "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+              "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+            },
+            "title": "Lorem ipsum",
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/f1350f6e-a313-45af-aa77-f559a88f00f1",
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/bdd9e07c-d489-45ad-b93a-ade9f73d4795"
+          }
+        ],
+        "ctaList": [
+          {
+            "hide": {
+              "label": true
+            },
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Reverse"
+          },
+          {
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Border none"
+          }
+        ],
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>",
+        "__resolveType": "deco-sites/lp-deco/sections/Banners/BannerTextGeneric.tsx"
+      },
+      {
+        "hide": {
+          "cta": false
+        },
+        "image": {
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+        },
+        "title": "Medium length section heading goes here",
+        "layout": {
+          "image": "Front",
+          "variants": {
+            "cta": "Normal",
+            "section": "Normal"
+          },
+          "alignment": "Column reverse"
+        },
+        "banners": [
+          {
+            "image": {
+              "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+              "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+            },
+            "title": "Lorem ipsum",
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/3a1f0590-5ec6-4477-9332-cab499b0bc50",
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/ef7304bc-1c9d-4f88-8b39-8ecb92a28b0b",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique"
+          },
+          {
+            "image": {
+              "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+              "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+            },
+            "title": "Lorem ipsum",
+            "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/3a1f0590-5ec6-4477-9332-cab499b0bc50",
+            "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/ef7304bc-1c9d-4f88-8b39-8ecb92a28b0b",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique"
+          }
+        ],
+        "ctaList": [
+          {
+            "hide": {
+              "label": true
+            },
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Reverse"
+          },
+          {
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Border none"
+          }
+        ],
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>",
+        "__resolveType": "deco-sites/lp-deco/sections/Banners/BannerTextGeneric.tsx"
+      },
+      {
+        "hide": {
+          "cta": false
+        },
+        "image": {
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+        },
+        "title": "Medium length section heading goes here",
+        "layout": {
+          "image": "Background",
+          "variants": {
+            "cta": "Border none",
+            "section": "Normal"
+          },
+          "alignment": "Row"
+        },
+        "ctaList": [
+          {
+            "hide": {
+              "label": true
+            },
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Reverse"
+          },
+          {
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Border none"
+          }
+        ],
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>",
+        "__resolveType": "deco-sites/lp-deco/sections/Banners/BannerTextGeneric.tsx"
+      },
+      {
+        "hide": {
+          "cta": false
+        },
+        "image": {
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+        },
+        "title": "Medium length section heading goes here",
+        "layout": {
+          "image": "Background",
+          "variants": {
+            "cta": "Border none",
+            "section": "Normal"
+          },
+          "alignment": "Row"
+        },
+        "ctaList": [
+          {
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Border none"
+          }
+        ],
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>",
+        "__resolveType": "deco-sites/lp-deco/sections/Banners/BannerTextGeneric.tsx"
+      },
+      {
+        "hide": {
+          "cta": false
+        },
+        "image": {
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+        },
+        "title": "Medium length section heading goes here",
+        "layout": {
+          "image": "Background",
+          "variants": {
+            "cta": "Normal",
+            "section": "Normal"
+          },
+          "alignment": "Row reverse"
+        },
+        "ctaList": [
+          {
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Border none"
+          }
+        ],
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>",
+        "__resolveType": "deco-sites/lp-deco/sections/Banners/BannerTextGeneric.tsx"
+      },
+      {
+        "hide": {
+          "cta": false
+        },
+        "image": {
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+        },
+        "title": "Medium length section heading goes here",
+        "layout": {
+          "image": "Background",
+          "variants": {
+            "cta": "Border none",
+            "section": "Normal"
+          },
+          "alignment": "Column"
+        },
+        "ctaList": [
+          {
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Border none"
+          }
+        ],
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>",
+        "__resolveType": "deco-sites/lp-deco/sections/Banners/BannerTextGeneric.tsx"
+      },
+      {
+        "hide": {
+          "cta": false
+        },
+        "image": {
+          "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+          "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+        },
+        "title": "Medium length section heading goes here",
+        "layout": {
+          "image": "Background",
+          "variants": {
+            "cta": "Border none",
+            "section": "Normal"
+          },
+          "alignment": "Column reverse"
+        },
+        "ctaList": [
+          {
+            "href": "#",
+            "text": "Button",
+            "label": "ArrowRight",
+            "variants": "Border none"
+          }
+        ],
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>",
+        "__resolveType": "deco-sites/lp-deco/sections/Banners/BannerTextGeneric.tsx"
+      },
+      {
+        "title": "",
+        "layout": {
+          "variation": "Slider",
+          "headerAlignment": "center"
+        },
+        "description": "",
+        "testimonials": [
+          {
+            "text": "Fashion Store is my go-to online destination for all things stylish. Their vast collection of trendy clothes and accessories never disappoints. The quality is exceptional, and the prices are affordable. The website is easy to navigate, and their customer service team is friendly and responsive. I always feel like a fashionista when I shop here!",
+            "user": {
+              "name": "Robert Johnson",
+              "avatar": "https://avatars.githubusercontent.com/u/117045675?s=200&v=4",
+              "company": "RJ Agency",
+              "position": "Founder"
+            },
+            "image": {
+              "alt": "Testimonal",
+              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/fb15429b-6e2c-4755-a78f-539269bb49b7"
+            }
+          },
+          {
+            "text": "I can't praise Fashion Store enough! Their commitment to staying ahead of the fashion curve is evident in their diverse and up-to-date inventory. Whether I need a casual outfit or a glamorous dress, they have it all. The shopping experience is seamless, and my orders always arrive promptly. Fashion Store is a true fashion lover's paradise!",
+            "user": {
+              "name": "Mary Bush",
+              "avatar": "https://avatars.githubusercontent.com/u/117045675?s=200&v=4",
+              "company": "MB & Co",
+              "position": "Director"
+            },
+            "image": {
+              "alt": "Testimonal",
+              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/7abc7640-9428-4301-9117-a69996c1cf3c"
+            }
+          },
+          {
+            "text": "Fashion Store has transformed my wardrobe. Their curated collection of clothing and accessories has helped me discover my personal style. The quality of their products is outstanding, and the prices are unbeatable. The website is visually appealing and easy to navigate. Fashion Store is my trusted companion for staying fashionable and feeling confident!",
+            "user": {
+              "name": "Sandra Bullock",
+              "avatar": "https://avatars.githubusercontent.com/u/117045675?s=200&v=4",
+              "company": "Sanlock",
+              "position": "Founder"
+            },
+            "image": {
+              "alt": "Testimonal",
+              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/41e901b9-f5b2-4aa0-b146-9b2fab5327af"
+            }
+          }
+        ],
+        "__resolveType": "deco-sites/lp-deco/sections/List/TestimonialsList.tsx"
+      },
+      {
+        "cta": [
+          {
+            "href": "#",
+            "text": "Button",
+            "variant": "Reverse"
+          },
+          {
+            "href": "#",
+            "text": "Button",
+            "variant": "Normal"
+          }
+        ],
+        "text": "Lorem ipsum dolor",
+        "__resolveType": "deco-sites/lp-deco/sections/TextCapture.tsx"
+      },
+      {
+        "layout": {
+          "variation": "Variation 6",
+          "backgroundColor": "Base 100"
+        },
+        "social": {
+          "links": [
+            {
+              "href": "#",
+              "labelIcon": "Facebook"
+            },
+            {
+              "href": "https://www.linkedin.com/company/deco-cx/",
+              "labelIcon": "LinkedIn"
+            },
+            {
+              "href": "#",
+              "labelIcon": "Twitter"
+            },
+            {
+              "href": "#",
+              "labelIcon": "Instagram"
+            }
+          ]
+        },
+        "sections": [
+          {
+            "items": [
+              {
+                "href": "#",
+                "label": "Link One"
+              },
+              {
+                "href": "#",
+                "label": "Link Two"
+              },
+              {
+                "href": "#",
+                "label": "Link Three"
+              },
+              {
+                "href": "#",
+                "label": "Link Four"
+              },
+              {
+                "href": "#",
+                "label": "Link Five"
+              }
+            ],
+            "label": "Column One"
+          },
+          {
+            "items": [
+              {
+                "href": "#",
+                "label": "Link One"
+              },
+              {
+                "href": "#",
+                "label": "Link Two"
+              },
+              {
+                "href": "#",
+                "label": "Link Three"
+              },
+              {
+                "href": "#",
+                "label": "Link Four"
+              },
+              {
+                "href": "#",
+                "label": "Link Five"
+              }
+            ],
+            "label": "Column Two"
+          },
+          {
+            "items": [
+              {
+                "href": "#",
+                "label": "Link One"
+              },
+              {
+                "href": "#",
+                "label": "Link Two"
+              },
+              {
+                "href": "#",
+                "label": "Link Three"
+              },
+              {
+                "href": "#",
+                "label": "Link Four"
+              },
+              {
+                "href": "#",
+                "label": "Link Five"
+              }
+            ],
+            "label": "Column Three"
+          },
+          {
+            "items": [
+              {
+                "href": "#",
+                "label": "Link One"
+              },
+              {
+                "href": "#",
+                "label": "Link Two"
+              },
+              {
+                "href": "#",
+                "label": "Link Three"
+              },
+              {
+                "href": "#",
+                "label": "Link Four"
+              },
+              {
+                "href": "#",
+                "label": "Link Five"
+              }
+            ],
+            "label": "Column Four"
+          },
+          {
+            "items": [
+              {
+                "href": "#",
+                "label": "Link One"
+              },
+              {
+                "href": "#",
+                "label": "Link Two"
+              },
+              {
+                "href": "#",
+                "label": "Link Three"
+              },
+              {
+                "href": "#",
+                "label": "Link Four"
+              },
+              {
+                "href": "#",
+                "label": "Link Five"
+              }
+            ],
+            "label": "Column Five"
+          }
+        ],
+        "extraLinks": [
+          {
+            "href": "/conteudo/institucional/politica-de-privacidade",
+            "link": "http://www.google.com/",
+            "label": "Política de privacidade"
+          },
+          {
+            "href": "/conteudo/institucional/trocas-e-devolucoes",
+            "link": "http://www.google.com",
+            "label": "Trocas e Devoluções"
+          },
+          {
+            "href": "#",
+            "label": "Cookies Settings"
+          }
+        ],
+        "newsletter": {
+          "form": {
+            "helpText": "<p>By subscribing you agree to with our <span style=\"text-decoration: underline;\" data-mce-style=\"text-decoration: underline;\"><span style=\"color: rgb(0, 0, 0); text-decoration: underline;\" data-mce-style=\"color: rgb(0, 0, 0); text-decoration: underline;\"><a data-mce-href=\"#\" href=\"#\" title=\"Privacy Policy\" target=\"_blank\" rel=\"noopener\" data-mce-selected=\"inline-boundary\" style=\"color: rgb(0, 0, 0); text-decoration: underline;\" data-mce-style=\"color: rgb(0, 0, 0); text-decoration: underline;\">Privacy Policy</a></span></span></p>",
+            "buttonText": "Subscribre",
+            "placeholder": "Enter your email"
+          },
+          "title": "Join our newsletter",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        "__resolveType": "deco-sites/lp-deco/sections/Footer.tsx"
+      },
+      {
+        "font": {
+          "fonts": [
+            {
+              "family": "Albert Sans",
+              "variations": [
+                {
+                  "weight": "400"
+                },
+                {
+                  "weight": "500"
+                },
+                {
+                  "weight": "600"
+                },
+                {
+                  "weight": "700"
+                }
+              ]
+            }
+          ],
+          "__resolveType": "website/loaders/fonts/googleFonts.ts"
+        },
+        "mainColors": {
+          "primary": "#28b60c",
+          "base-100": "#ffffff",
+          "tertiary": "#ffffff",
+          "secondary": "#1b750f"
+        },
+        "__resolveType": "deco-sites/lp-deco/sections/Theme.tsx"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "pages-testeaugusto-49b85d7eb482": {
+    "name": "Teste Augusto",
+    "path": "/test-sections",
+    "sections": [
+      {
+        "type": "website",
+        "image": "https://www.deco.cx/decocx-meta-en.png",
+        "title": "Start by deco.cx",
+        "description": "This is a site template for deco.cx",
+        "__resolveType": "website/sections/Seo/Seo.tsx",
+        "titleTemplate": "%s | Start by deco.cx"
+      },
+      {
+        "font": {
+          "fonts": [
+            {
+              "family": "Albert Sans",
+              "variations": [
+                {
+                  "weight": "400"
+                },
+                {
+                  "weight": "500"
+                },
+                {
+                  "weight": "600"
+                },
+                {
+                  "weight": "700"
+                }
+              ]
+            }
+          ],
+          "__resolveType": "website/loaders/fonts/googleFonts.ts"
+        },
+        "mainColors": {
+          "primary": "#3cc520",
+          "base-100": "#382e75",
+          "tertiary": "#f7f7f7",
+          "secondary": "#1b750f"
+        },
+        "__resolveType": "deco-sites/lp-deco/sections/Theme.tsx",
+        "complementaryColors": {
+          "base": {
+            "base-200": "#970c0c"
+          }
+        }
+      },
+      {
+        "container": {
+          "style": {
+            "content": {
+              "textColor": "Base"
+            },
+            "section": {
+              "bgImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/76774a55-0000-4672-ae39-3d5132ee317b"
+            }
+          },
+          "header": {
+            "title": "Olar",
+            "description": "Helooo"
+          }
+        },
+        "__resolveType": "deco-sites/lp-deco/sections/Hero.tsx"
+      },
+      {
+        "logo": {
+          "alt": "",
+          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/174fea61-a398-4859-a61a-635cbdabd9f0"
+        },
+        "navItems": [],
+        "__resolveType": "deco-sites/lp-deco/sections/Header.tsx"
+      },
+      {
+        "banner": {
+          "hide": {
+            "cta": false
+          },
+          "image": {
+            "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+            "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+          },
+          "title": "Encontre a Agência de Ecommerce Perfeita Para o Seu Negócio",
+          "layout": {
+            "image": "Front",
+            "variants": {
+              "cta": "Normal",
+              "section": "Normal"
+            },
+            "alignment": "Column"
+          },
+          "banners": [],
+          "ctaList": [
+            {
+              "hide": {
+                "label": true
+              },
+              "href": "#",
+              "text": "Encontre o parceiro ideal agora",
+              "label": "ArrowRight",
+              "variants": "Normal"
+            },
+            {
+              "href": "*",
+              "text": "Cadastre sua Agência",
+              "label": "ArrowRight",
+              "variants": "Reverse"
+            }
+          ],
+          "description": "<p>Conectamos você com especialistas.<br>Descubra em minutos a agência ideal para transformar seu projeto em realidade.</p>"
+        },
+        "partners": {
+          "title": "Conecte-se às melhores agência para qualquer plataforma: Seguro, Rápido e Personalizado.",
+          "rowImages": [
+            {
+              "colImages": [
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/2b4cbe90-1393-47e7-a44f-0010580b4d33",
+                  "altText": "VTEX"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/cb145f84-ba53-4558-95b9-fe4c916564c9",
+                  "altText": "Shopify"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/80b196f7-000e-4006-8a68-f5d7857fac68",
+                  "altText": "Wake"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/4e29e78d-c8ee-4929-befe-14020cf37c21",
+                  "altText": "Linx Commerce"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/5225ba59-1d26-4d3c-955a-aa4068056d58",
+                  "altText": "Nuvemshop"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/792b3078-728b-495f-bb40-f745afa42708",
+                  "altText": "Vnda by olist"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/4463ed03-3248-4597-9e9c-2d57b1834f1b",
+                  "altText": "Magento"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/9cb813c4-acc7-43f6-98ac-bdf9324f4161",
+                  "altText": "Loja Integrada"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/9418191e-27af-4b59-ab4b-352f0e468782",
+                  "altText": "Woocommerce"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/eeef886f-5551-4dec-b6bf-112c50e41d10",
+                  "altText": "Magento"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                  "altText": "Deco"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/6b16af7b-dd76-413b-812d-d42e0e17a5bc",
+                  "altText": "Salesforce"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                  "altText": "Deco"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/7480dd17-8e63-4d41-891e-8f0b8b55fbf4",
+                  "altText": "Zee.dog"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                  "altText": "Deco"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/7480dd17-8e63-4d41-891e-8f0b8b55fbf4",
+                  "altText": "Zee.dog"
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                  "altText": "Deco"
+                }
+              ]
+            }
+          ]
+        },
+        "container": {
+          "style": {
+            "content": {
+              "bgColor": "Secondary"
+            }
+          }
+        },
+        "background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/5e4716d5-7e21-4f3b-ac5e-b2a11956b95b",
+        "__resolveType": "deco-sites/lp-deco/sections/HeroCompose.tsx"
+      },
+      {
+        "cards": [
+          {
+            "cta": {
+              "hide": {
+                "label": false
+              },
+              "href": "#",
+              "label": "ArrowRight",
+              "variant": "Border none"
+            },
+            "title": "Para sempre 100% Gratuito",
+            "labelIcon": "PigMoney",
+            "description": "Sem comissões ocultas. Nossa plataforma conecta você com agências sem nenhum custo adicional."
+          },
+          {
+            "cta": {
+              "hide": {
+                "label": false
+              },
+              "href": "#",
+              "label": "ArrowRight",
+              "variant": "Border none"
+            },
+            "title": "Receba indicações em minutos",
+            "labelIcon": "MailBox",
+            "description": "Receba sugestões personalizadas de agências em até 5 minutos, graças ao nosso algoritmo inteligente"
+          },
+          {
+            "cta": {
+              "hide": {
+                "label": false
+              },
+              "href": "#",
+              "label": "ArrowRight",
+              "variant": "Border none"
+            },
+            "title": "Personalizado para Suas Necessidades",
+            "labelIcon": "AdjustmentsHorizontal",
+            "description": "Encontre soluções feitas sob medida para atender às demandas únicas do seu projeto de ecommerce"
+          },
+          {
+            "cta": {
+              "hide": {
+                "label": true
+              },
+              "href": "*",
+              "label": "Box",
+              "variant": "Normal"
+            },
+            "title": "Avaliações de Clientes Reais",
+            "labelIcon": "Star",
+            "description": "Confie em avaliações autênticas de clientes que já experimentaram nosso serviço de conexão com agências"
+          }
+        ],
+        "titleSection": "",
+        "__resolveType": "deco-sites/lp-deco/sections/List/Benefits.tsx"
+      },
+      {
+        "text": "Confira alguns dos serviços prestados",
+        "alignment": "Center",
+        "subheading": "Os serviços podem variar de acordo com a agência",
+        "__resolveType": "deco-sites/lp-deco/sections/Intro.tsx"
+      },
+      {
+        "services": [
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/0fb558fa-b719-4453-b712-0370c4ec883f",
+            "label": "Serviço",
+            "title": "Implementação e Customização de Lojas Online",
+            "placement": "left",
+            "description": "Desde a criação de lojas virtuais personalizadas, design de UX/UI, até ajustes finos em plataformas existentes, nossos parceiros oferecem soluções completas."
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/23fdc939-3f04-4687-8132-720ed312558a",
+            "label": "Serviço",
+            "title": "Gestão de Tráfego e CRO",
+            "placement": "right",
+            "description": "Maximize suas vendas com estratégias de CRO desenvolvidas por especialistas, focadas em aumentar a eficiência e conversão do seu e-commerce."
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/4584bbe4-62a7-4a3a-b972-465f09f2564c",
+            "label": "Serviço",
+            "title": "Estratégia e otimização de SEO",
+            "placement": "left",
+            "description": "Otimize sua presença online com estratégias de SEO personalizadas, elevando seu ranking e visibilidade nos motores de busca."
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/42bc84bc-3894-42b3-976f-ad94b5152a3d",
+            "label": "Serviço",
+            "title": "Analytics, Taggeamento e Conversão",
+            "placement": "right",
+            "description": "Aumente o alcance e a eficácia do seu e-commerce com estratégias refinadas de mídia paga e gestão de tráfego"
+          }
+        ],
+        "__resolveType": "deco-sites/lp-deco/sections/Services.tsx"
+      },
+      {
+        "cta": [
+          {
+            "href": "#",
+            "text": "Encontre Sua Agência",
+            "variant": "Reverse"
+          },
+          {
+            "href": "#",
+            "text": "Cadastre Sua Agência",
+            "variant": "Normal"
+          }
+        ],
+        "text": "Comece Sua Jornada Ecommerce Agora",
+        "__resolveType": "deco-sites/lp-deco/sections/TextCapture.tsx"
+      },
+      {
+        "menu": [
+          {
+            "href": "/",
+            "title": "Plataforma",
+            "submenu": [
+              {
+                "href": "/admin",
+                "title": "Login"
+              },
+              {
+                "href": "/pt/pricing",
+                "title": "Preços"
+              },
+              {
+                "href": "/pt/contact-us",
+                "title": "Contato"
+              }
+            ]
+          },
+          {
+            "href": "/",
+            "title": "Recursos",
+            "submenu": [
+              {
+                "href": "/docs/pt",
+                "title": "Documentação"
+              },
+              {
+                "href": "/pt/blog",
+                "title": "Blog"
+              },
+              {
+                "href": "/pt/community",
+                "title": "Comunidade"
+              }
+            ]
+          },
+          {
+            "href": "/",
+            "title": "Company",
+            "submenu": [
+              {
+                "href": "https://deco.cx/politica-privacidade",
+                "title": "Política de privacidade"
+              },
+              {
+                "href": "https://deco.cx/termos-de-uso",
+                "title": "Termos de uso"
+              }
+            ]
+          }
+        ],
+        "social": {
+          "links": [],
+          "gitUrl": "https://github.com/deco-cx",
+          "discordUrl": "https://discord.gg/YsGgt8EQCZ",
+          "linkedinUrl": "https://www.linkedin.com/company/deco-cx/"
+        },
+        "logoImage": {
+          "alt": "Logo",
+          "href": "/",
+          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d08159ca-72fd-42c7-a1dd-dca80d358e2d",
+          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/67b31581-0666-4b8c-a262-93e41189adcc",
+          "widthMobile": 500,
+          "heightMobile": 500,
+          "widthDesktop": 1565,
+          "heightDesktop": 505
+        },
+        "extraLinks": [],
+        "canShowLogo": true,
+        "__resolveType": "deco-sites/lp-deco/sections/Footer.tsx"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "pages-agênciasparae-commerce-4d4c3cab6e89": {
+    "name": "Agências para E-commerce",
+    "path": "/",
+    "sections": {
+      "variants": [
+        {
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          },
+          "value": [
+            {
+              "type": "website",
+              "image": "https://www.deco.cx/decocx-meta-en.png",
+              "title": "Agências para E-commerce | Encontre o parceiro ideal rapidamente",
+              "description": "Encontre a agência de Ecommerce perfeita para seu negócio em poucos cliques",
+              "__resolveType": "website/sections/Seo/Seo.tsx",
+              "titleTemplate": "%s | built by deco.cx"
+            },
+            {
+              "font": {
+                "fonts": [
+                  {
+                    "family": "Albert Sans",
+                    "variations": [
+                      {
+                        "weight": "400"
+                      },
+                      {
+                        "weight": "500"
+                      },
+                      {
+                        "weight": "600"
+                      },
+                      {
+                        "weight": "700"
+                      }
+                    ]
+                  }
+                ],
+                "__resolveType": "website/loaders/fonts/googleFonts.ts"
+              },
+              "mainColors": {
+                "primary": "#3cc520",
+                "base-100": "#382e75",
+                "tertiary": "#f7f7f7",
+                "secondary": "#1b750f"
+              },
+              "__resolveType": "deco-sites/lp-deco/sections/Theme.tsx",
+              "complementaryColors": {
+                "base": {
+                  "base-200": "#970c0c"
+                }
+              }
+            },
+            {
+              "logo": {
+                "alt": "",
+                "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/174fea61-a398-4859-a61a-635cbdabd9f0"
+              },
+              "navItems": [],
+              "__resolveType": "deco-sites/lp-deco/sections/Header.tsx"
+            },
+            {
+              "banner": {
+                "hide": {
+                  "cta": false
+                },
+                "image": {
+                  "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/51661218-e091-497d-93ac-279a3bd4bbf2",
+                  "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/56214283-5969-41b0-9b69-a1a40d4ea371"
+                },
+                "title": "Encontre a Agência de Ecommerce Perfeita Para o Seu Negócio",
+                "layout": {
+                  "image": "Front",
+                  "variants": {
+                    "cta": "Normal",
+                    "section": "Normal"
+                  },
+                  "alignment": "Column"
+                },
+                "banners": [],
+                "ctaList": [
+                  {
+                    "hide": {
+                      "label": true
+                    },
+                    "href": "#",
+                    "text": "Encontre o parceiro ideal agora",
+                    "label": "ArrowRight",
+                    "variants": "Normal"
+                  },
+                  {
+                    "href": "*",
+                    "text": "Cadastre sua Agência",
+                    "label": "ArrowRight",
+                    "variants": "Reverse"
+                  }
+                ],
+                "description": "<p>Conectamos você com especialistas.<br>Descubra em minutos a agência ideal para transformar seu projeto em realidade.</p>"
+              },
+              "partners": {
+                "title": "Conecte-se às melhores agência para qualquer plataforma: Seguro, Rápido e Personalizado.",
+                "rowImages": [
+                  {
+                    "colImages": [
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/2b4cbe90-1393-47e7-a44f-0010580b4d33",
+                        "altText": "VTEX"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/cb145f84-ba53-4558-95b9-fe4c916564c9",
+                        "altText": "Shopify"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/80b196f7-000e-4006-8a68-f5d7857fac68",
+                        "altText": "Wake"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/4e29e78d-c8ee-4929-befe-14020cf37c21",
+                        "altText": "Linx Commerce"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/5225ba59-1d26-4d3c-955a-aa4068056d58",
+                        "altText": "Nuvemshop"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/792b3078-728b-495f-bb40-f745afa42708",
+                        "altText": "Vnda by olist"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/4463ed03-3248-4597-9e9c-2d57b1834f1b",
+                        "altText": "Magento"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/9cb813c4-acc7-43f6-98ac-bdf9324f4161",
+                        "altText": "Loja Integrada"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/9418191e-27af-4b59-ab4b-352f0e468782",
+                        "altText": "Woocommerce"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/eeef886f-5551-4dec-b6bf-112c50e41d10",
+                        "altText": "Magento"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                        "altText": "Deco"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/6b16af7b-dd76-413b-812d-d42e0e17a5bc",
+                        "altText": "Salesforce"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                        "altText": "Deco"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/7480dd17-8e63-4d41-891e-8f0b8b55fbf4",
+                        "altText": "Zee.dog"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                        "altText": "Deco"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/7480dd17-8e63-4d41-891e-8f0b8b55fbf4",
+                        "altText": "Zee.dog"
+                      },
+                      {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/b85a5442-7d2f-4869-a333-bea88a64851b",
+                        "altText": "Deco"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "background": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/5e4716d5-7e21-4f3b-ac5e-b2a11956b95b",
+              "__resolveType": "deco-sites/lp-deco/sections/HeroCompose.tsx"
+            },
+            {
+              "cards": [
+                {
+                  "cta": {
+                    "hide": {
+                      "label": false
+                    },
+                    "href": "#",
+                    "label": "ArrowRight",
+                    "variant": "Border none"
+                  },
+                  "title": "Para sempre 100% Gratuito",
+                  "labelIcon": "PigMoney",
+                  "description": "Sem comissões ocultas. Nossa plataforma conecta você com agências sem nenhum custo adicional."
+                },
+                {
+                  "cta": {
+                    "hide": {
+                      "label": false
+                    },
+                    "href": "#",
+                    "label": "ArrowRight",
+                    "variant": "Border none"
+                  },
+                  "title": "Receba indicações em minutos",
+                  "labelIcon": "MailBox",
+                  "description": "Receba sugestões personalizadas de agências em até 5 minutos, graças ao nosso algoritmo inteligente"
+                },
+                {
+                  "cta": {
+                    "hide": {
+                      "label": false
+                    },
+                    "href": "#",
+                    "label": "ArrowRight",
+                    "variant": "Border none"
+                  },
+                  "title": "Personalizado para Suas Necessidades",
+                  "labelIcon": "AdjustmentsHorizontal",
+                  "description": "Encontre soluções feitas sob medida para atender às demandas únicas do seu projeto de ecommerce"
+                },
+                {
+                  "cta": {
+                    "hide": {
+                      "label": true
+                    },
+                    "href": "*",
+                    "label": "Box",
+                    "variant": "Normal"
+                  },
+                  "title": "Avaliações de Clientes Reais",
+                  "labelIcon": "Star",
+                  "description": "Confie em avaliações autênticas de clientes que já experimentaram nosso serviço de conexão com agências"
+                }
+              ],
+              "titleSection": "",
+              "__resolveType": "deco-sites/lp-deco/sections/List/Benefits.tsx"
+            },
+            {
+              "text": "Confira alguns dos serviços prestados",
+              "alignment": "Center",
+              "subheading": "Os serviços podem variar de acordo com a agência",
+              "__resolveType": "deco-sites/lp-deco/sections/Intro.tsx"
+            },
+            {
+              "services": [
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/0fb558fa-b719-4453-b712-0370c4ec883f",
+                  "label": "Serviço",
+                  "title": "Implementação e Customização de Lojas Online",
+                  "placement": "left",
+                  "description": "Desde a criação de lojas virtuais personalizadas, design de UX/UI, até ajustes finos em plataformas existentes, nossos parceiros oferecem soluções completas."
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/23fdc939-3f04-4687-8132-720ed312558a",
+                  "label": "Serviço",
+                  "title": "Gestão de Tráfego e CRO",
+                  "placement": "right",
+                  "description": "Maximize suas vendas com estratégias de CRO desenvolvidas por especialistas, focadas em aumentar a eficiência e conversão do seu e-commerce."
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/4584bbe4-62a7-4a3a-b972-465f09f2564c",
+                  "label": "Serviço",
+                  "title": "Estratégia e otimização de SEO",
+                  "placement": "left",
+                  "description": "Otimize sua presença online com estratégias de SEO personalizadas, elevando seu ranking e visibilidade nos motores de busca."
+                },
+                {
+                  "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3290/42bc84bc-3894-42b3-976f-ad94b5152a3d",
+                  "label": "Serviço",
+                  "title": "Analytics, Taggeamento e Conversão",
+                  "placement": "right",
+                  "description": "Aumente o alcance e a eficácia do seu e-commerce com estratégias refinadas de mídia paga e gestão de tráfego"
+                }
+              ],
+              "__resolveType": "deco-sites/lp-deco/sections/Services.tsx"
+            },
+            {
+              "cta": [
+                {
+                  "href": "#",
+                  "text": "Encontre Sua Agência",
+                  "variant": "Reverse"
+                },
+                {
+                  "href": "#",
+                  "text": "Cadastre Sua Agência",
+                  "variant": "Normal"
+                }
+              ],
+              "text": "Comece Sua Jornada Ecommerce Agora",
+              "__resolveType": "deco-sites/lp-deco/sections/TextCapture.tsx"
+            },
+            {
+              "menu": [
+                {
+                  "href": "/",
+                  "title": "Plataforma",
+                  "submenu": [
+                    {
+                      "href": "/admin",
+                      "title": "Login"
+                    },
+                    {
+                      "href": "/pt/pricing",
+                      "title": "Preços"
+                    },
+                    {
+                      "href": "/pt/contact-us",
+                      "title": "Contato"
+                    }
+                  ]
+                },
+                {
+                  "href": "/",
+                  "title": "Recursos",
+                  "submenu": [
+                    {
+                      "href": "/docs/pt",
+                      "title": "Documentação"
+                    },
+                    {
+                      "href": "/pt/blog",
+                      "title": "Blog"
+                    },
+                    {
+                      "href": "/pt/community",
+                      "title": "Comunidade"
+                    }
+                  ]
+                },
+                {
+                  "href": "/",
+                  "title": "Company",
+                  "submenu": [
+                    {
+                      "href": "https://deco.cx/politica-privacidade",
+                      "title": "Política de privacidade"
+                    },
+                    {
+                      "href": "https://deco.cx/termos-de-uso",
+                      "title": "Termos de uso"
+                    }
+                  ]
+                }
+              ],
+              "social": {
+                "links": [],
+                "gitUrl": "https://github.com/deco-cx",
+                "discordUrl": "https://discord.gg/YsGgt8EQCZ",
+                "linkedinUrl": "https://www.linkedin.com/company/deco-cx/"
+              },
+              "logoImage": {
+                "alt": "Logo",
+                "href": "/",
+                "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/d08159ca-72fd-42c7-a1dd-dca80d358e2d",
+                "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/530/67b31581-0666-4b8c-a262-93e41189adcc",
+                "widthMobile": 500,
+                "heightMobile": 500,
+                "widthDesktop": 1565,
+                "heightDesktop": 505
+              },
+              "extraLinks": [],
+              "canShowLogo": true,
+              "__resolveType": "deco-sites/lp-deco/sections/Footer.tsx"
+            }
+          ]
+        }
+      ],
+      "__resolveType": "website/flags/multivariate.ts"
+    },
+    "__resolveType": "website/pages/Page.tsx"
+  }
+}

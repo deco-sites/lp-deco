@@ -1,3 +1,4 @@
+import Container, { Props as ContainerProps } from "$store/components/ui/Container.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import BannerTextGeneric, {
   BannerTextGenericProps,
@@ -9,19 +10,16 @@ import Partners, {
 export interface Props {
   banner: BannerTextGenericProps;
   partners: PartnerProps;
-  background: ImageWidget;
+  container?: ContainerProps;
 }
 
 export default function HeroCompose(props: Props) {
   return (
-    <div>
-      <img
-        src={props.background}
-        alt="Background"
-        class="absolute top-0 left-0 w-full h-full opacity-[0.01]"
-      />
-      <BannerTextGeneric {...props.banner} />
-      <Partners {...props.partners} />
-    </div>
+    <Container {...props.container}>
+      <>
+        <BannerTextGeneric {...props.banner} />
+        <Partners {...props.partners} />
+      </>
+    </Container>
   );
 }

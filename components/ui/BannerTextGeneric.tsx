@@ -43,9 +43,6 @@ export interface BannerTextGenericProps {
   layout?: {
     alignment?: "Row" | "Column" | "Row reverse" | "Column reverse";
     image?: "Background" | "Front";
-    variants?: {
-      section?: "Normal" | "Reverse";
-    };
   };
 }
 
@@ -96,7 +93,7 @@ export default function BannerTextGeneric(
     hide?.cta ? <></> : (
       <a
         href={href ?? "#"}
-        class={`block rounded-full duration-200 normal-case text-base px-6 py-3  ${
+        class={`block rounded-full duration-200 normal-case px-6 py-3  ${
           !hide?.label ? "pr-3" : "pr-4"
         } transition-colors duration-200 flex items-center gap-2 ${
           BACKGROUND_CTA[variants ?? "Normal"]
@@ -114,7 +111,7 @@ export default function BannerTextGeneric(
   const textContainer = (
     <>
       <div
-        class={`flex gap-4 md:max-w-4xl mx-auto
+        class={`flex gap-4 mx-auto
       ${
           layout?.alignment === "Column reverse"
             ? "flex flex-col md:flex-row justify-stretch md:justify-around md:items-center gap-12"
@@ -124,11 +121,6 @@ export default function BannerTextGeneric(
       >
         <p
           class={`font-bold text-[48px] md:text-[56px] leading-[120%] w-full
-          ${
-            layout?.variants?.section === "Reverse"
-              ? "text-[#FFFFFF]"
-              : "text-[#181212]"
-          } 
           ${
             layout?.alignment === "Column"
               ? "text-center"
@@ -146,12 +138,7 @@ export default function BannerTextGeneric(
           }`}
         >
           <div
-            class={`text-base md:text-[18px] leading-[150%] md:leading-8
-          ${
-              layout?.variants?.section === "Reverse"
-                ? "text-[#FFFFFF]"
-                : "text-[#181212]"
-            } 
+            class={`md:text-[18px] leading-[150%] md:leading-8
           ${
               layout?.alignment === "Column"
                 ? "text-center"
@@ -177,9 +164,7 @@ export default function BannerTextGeneric(
 
   return (
     <section
-      class={`${
-        layout?.variants?.section === "Reverse" ? "bg-[#0A2121]" : "bg-[#FFF]"
-      } w-full py-10 md:py-24`}
+      class="w-full py-10 md:py-24"
     >
       <div
         class={`relative z-0 ${
@@ -246,11 +231,11 @@ export default function BannerTextGeneric(
                     ? (
                       <div class="flex flex-col bg-[#f2f2f2] items-start gap-4 px-4 py-8 md:px-6 md:py-10">
                         <div class="flex justify-start">
-                          <h1 class="text-[#0A2121] font-semibold text-xl lg:text-2xl">
+                          <h1 class="font-semibold text-xl lg:text-2xl">
                             {banners[0]?.title}
                           </h1>
                         </div>
-                        <div class="flex flex-col items-start w-full text-[#0A2121]">
+                        <div class="flex flex-col items-start w-full">
                           {banners[0]?.description && (
                             <p class="md:leading-8">
                               {banners[0]?.description}
